@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
-    <meta name="description" content="">
+    <title>Testpage</title>
+    <meta name="description" content="This is testpage">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="src/home.css">
 </head>
@@ -19,6 +19,7 @@
             <script>
                 function hamburger(x) {
                     x.classList.toggle("change");
+                    document.getElementById("menu").classList.toggle("change");
                 }
             </script>
         </div>
@@ -28,6 +29,9 @@
             <div id="contenttext">Main</div>
         </div>
         <button id="btn">TOP</button>
+        <div class="menu" id="menu">
+            <div id="menutext">Menu</div>
+        </div>
     </main>
     <footer>
         <div id="content2">
