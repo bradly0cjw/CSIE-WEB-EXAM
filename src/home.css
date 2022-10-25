@@ -4,11 +4,13 @@
 }
 
 nav {
+    position: absolute;
+    top:0px;
+    right:0px;
     background-color: #383636;
     width: 71.3px;
     height: 100%;
     z-index: 2;
-    float: right;
     margin: 0px;
     text-align: center;
 }
@@ -16,8 +18,9 @@ nav {
 main {
     background-color: #efdeb9;
     height: 91.02%;
-    width: 100%;
+    right: 71.3px;
     margin: -0px;
+    margin-right: 71.3px;
     text-align:center;
 
 }
@@ -92,7 +95,7 @@ body {
     animation-fill-mode: forwards;
 }
 #menutext{
-    margin: 25%;
+    margin-top: 25%;
 }
 @keyframes fadeInAnimation {
         0% {
