@@ -82,7 +82,7 @@ body {
     background-color: #302c23;
 }
 .menu{
-    /* display:none; */
+    display:none;
     position: absolute;
     color:white;
     top: 0px;
@@ -90,43 +90,46 @@ body {
     width:100%;
     height:100%;
     background-color: #423b2a;
+    opacity: 0;
+    z-index: -100;
+    transition: 
+    opacity 1s ease;
     /* clear:both */
     animation: fadeOutAnimation ease 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+}
+.change{
+    opacity: 1;
+    z-index: 100;
+    /* display:block; */
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
 }
 #menutext{
     margin-top: 25%;
 }
 @keyframes fadeInAnimation {
         0% {
-            opacity: 0;
             z-index: 100;
         }
         100% {
-            opacity: 1;
             z-index: 100;
-         }
+        }
     }
 @keyframes fadeOutAnimation {
     0% {
-        opacity: 1;
         z-index: 100;
     }
     99%{
         z-index: 100;
     }
     100% {
-        opacity: 0;
         z-index:-100;
      }
     }
-.change{
-    /* display:block; */
-    animation: fadeInAnimation ease 1s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
 .hamburger {
     display: inline-block;
     cursor: pointer;
