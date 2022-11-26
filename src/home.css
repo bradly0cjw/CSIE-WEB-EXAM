@@ -4,7 +4,7 @@
 }
 
 nav {
-    position: absolute;
+    position: fixed;
     top:0px;
     right:0px;
     background-color: #383636;
@@ -32,8 +32,8 @@ main {
     padding-top: 25%;
 }
 #content2{
-    height: 100%;
-    width: 100%;
+    height: auto;
+    width: auto;
 }
 #contenttext2{
     padding-top: 25px;
@@ -41,10 +41,11 @@ main {
 }
 footer {
     background-color: #595449;
-    height: 8.98%;
-    width: 96.3%;
+    /* height: 8.98%; */
+    right:71.3px;
+    margin-right: 71.3px;
     z-index: 0;
-    margin: 0;
+    /* margin: 0; */
     text-align:center;
 }
 
