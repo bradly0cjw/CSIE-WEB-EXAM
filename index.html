@@ -13,89 +13,159 @@
 </head>
 
 <body>
-    <nav>
-        <div class="hamburger" onclick="hamburger(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-            <script>
-                function hamburger(x) {
-                    x.classList.toggle("change");
-                    document.getElementById("menu").classList.toggle("change");
-                }
-            </script>
-        </div>
-    </nav>
-    <main>
-        <div id="content">
-            <div id="contenttext">歡迎來到台東大學</div>
-        </div>
-        <button id="btn">TOP</button>
-        <div class="menu" id="menu">
-            <div id="menutext">選單</div>
-        </div>
-    </main>
-    <!-- <footer>
-        <div id="content2">
-            <div class="footer-info">
-                <p class="footer-credit">Website design by <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">資工一甲</a></p>
-                <p class="footer-disclaimer">對相關素材的任何引用僅用於教學目的，並不意指任何實際組織或事件</p>
-                <p class="footer-legal">© 2022 台東大學 資工一甲 Bradly, kai. All rights reserved.</p>
+    <div class="left">
+        <main>
+            <div id="content">
+                <div id="contenttext">歡迎來到台東大學</div>
             </div>
-        </div>
-    </footer> -->
-    <footer>
-		<div class="footer-content">
-            <ul class="footer-social">
-                <li>
-                    <a href="#">
-						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 45 45" style="enable-background:new 0 0 45 45;" xml:space="preserve">
-							<g>
-								<path class="youtube-logo" d="M33,17.2c-0.3-1-1-1.7-1.9-2c-1.7-0.5-8.6-0.5-8.6-0.5s-6.9,0-8.6,0.5c-0.9,0.3-1.7,1-1.9,2
-                				c-0.5,1.7-0.5,5.3-0.5,5.3s0,3.6,0.5,5.3c0.3,1,1,1.7,1.9,2c1.7,0.5,8.6,0.5,8.6,0.5s6.9,0,8.6-0.5c0.9-0.3,1.7-1,1.9-2
-                				c0.5-1.7,0.5-5.3,0.5-5.3S33.5,18.9,33,17.2z M20.2,25.8v-6.5l5.8,3.3L20.2,25.8z"></path>
-							</g>
-						</svg>
-						
-                    </a>  
-                </li>
-						
-                <li>
-                    <a href="#">
-						<svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 45 45" style="enable-background:new 0 0 45 45;" xml:space="preserve">
-							<g>
-								<path class="instagram-logo" d="M22.5,13.5c2.9,0,3.3,0,4.4,0.1c1.1,0,1.7,0.2,2,0.4c0.5,0.2,0.9,0.4,1.3,0.8c0.4,0.4,0.6,0.8,0.8,1.3
-									  c0.2,0.4,0.3,1,0.4,2c0.1,1.2,0.1,1.5,0.1,4.4s0,3.3-0.1,4.4c0,1.1-0.2,1.7-0.4,2c-0.2,0.5-0.4,0.9-0.8,1.3
-									  c-0.4,0.4-0.8,0.6-1.3,0.8c-0.4,0.2-1,0.3-2,0.4c-1.2,0.1-1.5,0.1-4.4,0.1s-3.3,0-4.4-0.1c-1.1,0-1.7-0.2-2-0.4
-									  c-0.5-0.2-0.9-0.4-1.3-0.8c-0.4-0.4-0.6-0.8-0.8-1.3c-0.2-0.4-0.3-1-0.4-2c-0.1-1.2-0.1-1.5-0.1-4.4s0-3.3,0.1-4.4
-									  c0-1.1,0.2-1.7,0.4-2c0.2-0.5,0.4-0.9,0.8-1.3c0.4-0.4,0.8-0.6,1.3-0.8c0.4-0.2,1-0.3,2-0.4C19.2,13.5,19.6,13.5,22.5,13.5
-									  M22.5,11.5c-3,0-3.4,0-4.5,0.1c-1.2,0.1-2,0.2-2.7,0.5c-0.7,0.3-1.3,0.7-1.9,1.3c-0.6,0.6-1,1.2-1.3,1.9c-0.3,0.7-0.5,1.5-0.5,2.7
-									  c-0.1,1.2-0.1,1.5-0.1,4.5c0,3,0,3.4,0.1,4.5c0.1,1.2,0.2,2,0.5,2.7c0.3,0.7,0.7,1.3,1.3,1.9c0.6,0.6,1.2,1,1.9,1.3
-									  c0.7,0.3,1.5,0.5,2.7,0.5c1.2,0.1,1.5,0.1,4.5,0.1s3.4,0,4.5-0.1c1.2-0.1,2-0.2,2.7-0.5c0.7-0.3,1.3-0.7,1.9-1.3
-									  c0.6-0.6,1-1.2,1.3-1.9c0.3-0.7,0.5-1.5,0.5-2.7c0.1-1.2,0.1-1.5,0.1-4.5s0-3.4-0.1-4.5c-0.1-1.2-0.2-2-0.5-2.7
-									  c-0.3-0.7-0.7-1.3-1.3-1.9c-0.6-0.6-1.2-1-1.9-1.3c-0.7-0.3-1.5-0.5-2.7-0.5C25.9,11.5,25.5,11.5,22.5,11.5L22.5,11.5z"></path>
-								<path class="instagram-logo" d="M22.5,16.9c-3.1,0-5.6,2.5-5.6,5.6c0,3.1,2.5,5.6,5.6,5.6s5.6-2.5,5.6-5.6C28.1,19.4,25.6,16.9,22.5,16.9zM22.5,26.2c-2,0-3.7-1.6-3.7-3.7s1.6-3.7,3.7-3.7s3.7,1.6,3.7,3.7S24.5,26.2,22.5,26.2z"></path>
-							</g>
-						</svg>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <svg version="1.1" id="Layer_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 45 45" style="enable-background:new 0 0 45 45;" xml:space="preserve">
-							<path class="facebook-logo" d="M22.5,11.6c-6.1,0-11,4.9-11,11c0,5.5,4,10,9.3,10.9v-7.7H18v-3.2h2.8v-2.4c0-2.8,1.6-4.3,4.2-4.3
-                			c1.2,0,2.5,0.2,2.5,0.2v2.7H26c-1.4,0-1.8,0.8-1.8,1.7v2.1h3.1l-0.5,3.2h-2.6v7.7c5.3-0.8,9.3-5.4,9.3-10.9
-                			C33.5,16.5,28.6,11.6,22.5,11.6z"></path>
-						</svg>
-                    </a>
-                </li>
-            </ul>
-            <div class="footer-info">
-                <p class="footer-credit">Website design by <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">資工一甲</a></p>
-                <p class="footer-disclaimer">對相關素材的任何引用僅用於教學目的，並不意指任何實際組織或事件</p>
-                <p class="footer-legal">© 2022 台東大學 資工一甲 Bradly, kai. All rights reserved.</p>
+            <button id="btn">TOP</button>
+            <div class="menu" id="menu">
+                <div id="menutext">選單</div>
             </div>
-        </div>
-	</footer>
+        </main>
+        <!-- <footer>
+            <div id="content2">
+                <div class="footer-info">
+                    <p class="footer-credit">Website design by <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">資工一甲</a></p>
+                    <p class="footer-disclaimer">對相關素材的任何引用僅用於教學目的，並不意指任何實際組織或事件</p>
+                    <p class="footer-legal">© 2022 台東大學 資工一甲 Bradly, kai. All rights reserved.</p>
+                </div>
+            </div>
+        </footer> -->
+        <footer>
+            <div class="footer-content">
+                <ul class="footer-social">
+                    <li>
+                        <a href="#">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 45 45" style="enable-background:new 0 0 45 45;" xml:space="preserve">
+                                <g>
+                                    <path class="youtube-logo" d="M33,17.2c-0.3-1-1-1.7-1.9-2c-1.7-0.5-8.6-0.5-8.6-0.5s-6.9,0-8.6,0.5c-0.9,0.3-1.7,1-1.9,2
+                                    c-0.5,1.7-0.5,5.3-0.5,5.3s0,3.6,0.5,5.3c0.3,1,1,1.7,1.9,2c1.7,0.5,8.6,0.5,8.6,0.5s6.9,0,8.6-0.5c0.9-0.3,1.7-1,1.9-2
+                                    c0.5-1.7,0.5-5.3,0.5-5.3S33.5,18.9,33,17.2z M20.2,25.8v-6.5l5.8,3.3L20.2,25.8z"></path>
+                                </g>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 227.33 227.33">
+                                <defs>
+                                  <style>
+                                    .cls-1 {
+                                      fill: #fff;
+                                    }
+                              
+                                    .cls-2 {
+                                      fill: #28b5c2;
+                                    }
+                                  </style>
+                                </defs>
+                                <g id="_圖層_2" data-name="圖層 2">
+                                  <path class="cls-2" d="M113.67,.25c62.64,0,113.41,50.78,113.41,113.42s-50.77,113.42-113.41,113.42S.25,176.31,.25,113.67,51.03,.25,113.67,.25Z"/>
+                                </g>
+                                <g id="_圖層_3" data-name="圖層 3">
+                                  <path class="cls-1" d="M85.42,23.15V59.3l-66.13-.11,.15,.28,3.02,5.48,29.4,51.31-2.01,1.21-27.11,15.53,10.16,17.51,47.15-26.82,.98-.57-24.98-42.35s-1.41-2.24,1.13-2.26c.89,0,49.57,.34,49.57,.34l.02-2.24,.11-53.44h-21.46Z"/>
+                                  <path class="cls-1" d="M142,23.15V59.3s66.13-.11,66.13-.11l-.15,.28-3.02,5.48-29.4,51.31,2.01,1.21,27.11,15.53-10.16,17.51-47.15-26.82-.98-.57,24.98-42.35s1.41-2.24-1.13-2.26c-.89,0-49.57,.34-49.57,.34l-.02-2.24-.11-53.44h21.46Z"/>
+                                  <polygon class="cls-1" points="39.6 163.84 50.62 182.05 79.84 165.53 113.53 222.07 146.97 165.95 176.83 182.68 187.63 164.68 140.4 136.73 113.67 179.4 87.04 135.88 39.6 163.84"/>
+                                  <circle class="cls-1" cx="113.67" cy="113.67" r="18.63"/>
+                                </g>
+                              </svg>
+                            
+                        </a>  
+                    </li>
+                            
+                    <li>
+                        <a href="#">
+                            <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 45 45" style="enable-background:new 0 0 45 45;" xml:space="preserve">
+                                <g>
+                                    <path class="instagram-logo" d="M22.5,13.5c2.9,0,3.3,0,4.4,0.1c1.1,0,1.7,0.2,2,0.4c0.5,0.2,0.9,0.4,1.3,0.8c0.4,0.4,0.6,0.8,0.8,1.3
+                                    c0.2,0.4,0.3,1,0.4,2c0.1,1.2,0.1,1.5,0.1,4.4s0,3.3-0.1,4.4c0,1.1-0.2,1.7-0.4,2c-0.2,0.5-0.4,0.9-0.8,1.3
+                                    c-0.4,0.4-0.8,0.6-1.3,0.8c-0.4,0.2-1,0.3-2,0.4c-1.2,0.1-1.5,0.1-4.4,0.1s-3.3,0-4.4-0.1c-1.1,0-1.7-0.2-2-0.4
+                                    c-0.5-0.2-0.9-0.4-1.3-0.8c-0.4-0.4-0.6-0.8-0.8-1.3c-0.2-0.4-0.3-1-0.4-2c-0.1-1.2-0.1-1.5-0.1-4.4s0-3.3,0.1-4.4
+                                    c0-1.1,0.2-1.7,0.4-2c0.2-0.5,0.4-0.9,0.8-1.3c0.4-0.4,0.8-0.6,1.3-0.8c0.4-0.2,1-0.3,2-0.4C19.2,13.5,19.6,13.5,22.5,13.5
+                                    M22.5,11.5c-3,0-3.4,0-4.5,0.1c-1.2,0.1-2,0.2-2.7,0.5c-0.7,0.3-1.3,0.7-1.9,1.3c-0.6,0.6-1,1.2-1.3,1.9c-0.3,0.7-0.5,1.5-0.5,2.7
+                                    c-0.1,1.2-0.1,1.5-0.1,4.5c0,3,0,3.4,0.1,4.5c0.1,1.2,0.2,2,0.5,2.7c0.3,0.7,0.7,1.3,1.3,1.9c0.6,0.6,1.2,1,1.9,1.3
+                                    c0.7,0.3,1.5,0.5,2.7,0.5c1.2,0.1,1.5,0.1,4.5,0.1s3.4,0,4.5-0.1c1.2-0.1,2-0.2,2.7-0.5c0.7-0.3,1.3-0.7,1.9-1.3
+                                    c0.6-0.6,1-1.2,1.3-1.9c0.3-0.7,0.5-1.5,0.5-2.7c0.1-1.2,0.1-1.5,0.1-4.5s0-3.4-0.1-4.5c-0.1-1.2-0.2-2-0.5-2.7
+                                    c-0.3-0.7-0.7-1.3-1.3-1.9c-0.6-0.6-1.2-1-1.9-1.3c-0.7-0.3-1.5-0.5-2.7-0.5C25.9,11.5,25.5,11.5,22.5,11.5L22.5,11.5z"></path>
+                                    <path class="instagram-logo" d="M22.5,16.9c-3.1,0-5.6,2.5-5.6,5.6c0,3.1,2.5,5.6,5.6,5.6s5.6-2.5,5.6-5.6C28.1,19.4,25.6,16.9,22.5,16.9zM22.5,26.2c-2,0-3.7-1.6-3.7-3.7s1.6-3.7,3.7-3.7s3.7,1.6,3.7,3.7S24.5,26.2,22.5,26.2z"></path>
+                                </g>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 227.33 227.33">
+                                <defs>
+                                  <style>
+                                    .cls-1 {
+                                      fill: #fff;
+                                    }
+                              
+                                    .cls-2 {
+                                      fill: #28b5c2;
+                                    }
+                                  </style>
+                                </defs>
+                                <g id="_圖層_2" data-name="圖層 2">
+                                  <path class="cls-2" d="M113.67,.25c62.64,0,113.41,50.78,113.41,113.42s-50.77,113.42-113.41,113.42S.25,176.31,.25,113.67,51.03,.25,113.67,.25Z"/>
+                                </g>
+                                <g id="_圖層_3" data-name="圖層 3">
+                                  <path class="cls-1" d="M85.42,23.15V59.3l-66.13-.11,.15,.28,3.02,5.48,29.4,51.31-2.01,1.21-27.11,15.53,10.16,17.51,47.15-26.82,.98-.57-24.98-42.35s-1.41-2.24,1.13-2.26c.89,0,49.57,.34,49.57,.34l.02-2.24,.11-53.44h-21.46Z"/>
+                                  <path class="cls-1" d="M142,23.15V59.3s66.13-.11,66.13-.11l-.15,.28-3.02,5.48-29.4,51.31,2.01,1.21,27.11,15.53-10.16,17.51-47.15-26.82-.98-.57,24.98-42.35s1.41-2.24-1.13-2.26c-.89,0-49.57,.34-49.57,.34l-.02-2.24-.11-53.44h21.46Z"/>
+                                  <polygon class="cls-1" points="39.6 163.84 50.62 182.05 79.84 165.53 113.53 222.07 146.97 165.95 176.83 182.68 187.63 164.68 140.4 136.73 113.67 179.4 87.04 135.88 39.6 163.84"/>
+                                  <circle class="cls-1" cx="113.67" cy="113.67" r="18.63"/>
+                                </g>
+                              </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg version="1.1" id="Layer_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 45 45" style="enable-background:new 0 0 45 45;" xml:space="preserve">
+                                <path class="facebook-logo" d="M22.5,11.6c-6.1,0-11,4.9-11,11c0,5.5,4,10,9.3,10.9v-7.7H18v-3.2h2.8v-2.4c0-2.8,1.6-4.3,4.2-4.3
+                                c1.2,0,2.5,0.2,2.5,0.2v2.7H26c-1.4,0-1.8,0.8-1.8,1.7v2.1h3.1l-0.5,3.2h-2.6v7.7c5.3-0.8,9.3-5.4,9.3-10.9
+                                C33.5,16.5,28.6,11.6,22.5,11.6z"></path>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 227.33 227.33">
+                                <defs>
+                                  <style>
+                                    .cls-1 {
+                                      fill: #fff;
+                                    }
+                              
+                                    .cls-2 {
+                                      fill: #28b5c2;
+                                    }
+                                  </style>
+                                </defs>
+                                <g id="_圖層_2" data-name="圖層 2">
+                                  <path class="cls-2" d="M113.67,.25c62.64,0,113.41,50.78,113.41,113.42s-50.77,113.42-113.41,113.42S.25,176.31,.25,113.67,51.03,.25,113.67,.25Z"/>
+                                </g>
+                                <g id="_圖層_3" data-name="圖層 3">
+                                  <path class="cls-1" d="M85.42,23.15V59.3l-66.13-.11,.15,.28,3.02,5.48,29.4,51.31-2.01,1.21-27.11,15.53,10.16,17.51,47.15-26.82,.98-.57-24.98-42.35s-1.41-2.24,1.13-2.26c.89,0,49.57,.34,49.57,.34l.02-2.24,.11-53.44h-21.46Z"/>
+                                  <path class="cls-1" d="M142,23.15V59.3s66.13-.11,66.13-.11l-.15,.28-3.02,5.48-29.4,51.31,2.01,1.21,27.11,15.53-10.16,17.51-47.15-26.82-.98-.57,24.98-42.35s1.41-2.24-1.13-2.26c-.89,0-49.57,.34-49.57,.34l-.02-2.24-.11-53.44h21.46Z"/>
+                                  <polygon class="cls-1" points="39.6 163.84 50.62 182.05 79.84 165.53 113.53 222.07 146.97 165.95 176.83 182.68 187.63 164.68 140.4 136.73 113.67 179.4 87.04 135.88 39.6 163.84"/>
+                                  <circle class="cls-1" cx="113.67" cy="113.67" r="18.63"/>
+                                </g>
+                              </svg>
+                        </a>
+                    </li>
+                </ul>
+                <div class="footer-info">
+                    <p class="footer-credit">Website design by <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">資工一甲</a></p>
+                    <p class="footer-disclaimer">對相關素材的任何引用僅用於教學目的，並不意指任何實際組織或事件</p>
+                    <p class="footer-legal">© 2022 台東大學 資工一甲 Bradly, kai. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="right">
+        <nav>
+            <div class="hamburger" onclick="hamburger(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <script>
+                    function hamburger(x) {
+                        x.classList.toggle("change");
+                        document.getElementById("menu").classList.toggle("change");
+                    }
+                </script>
+            </div>
+        </nav>
+    </div>
     <script src="src/astley.js"></script>
     <script src="" async defer></script>
 </body>
