@@ -39,22 +39,22 @@ main {
     padding-top: 25px;
     font-size: 0.5em;
 }
-footer {
+/* footer {
     background-color: #595449;
-    /* height: 8.98%; */
+    height: 8.98%; disable
     right:71.3px;
     margin-right: 71.3px;
     z-index: 0;
-    /* margin: 0; */
+    margin: 0; disable
     text-align:center;
-}
+} */
 
 html,
 body {
     height: 100%;
     width: 100%;
     font-family:MiSans;
-    font-size: 32px;
+    /* font-size: 32px; */
 }
 
 body {
