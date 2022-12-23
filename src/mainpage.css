@@ -1,0 +1,196 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+	font-family: Misans;
+	src: url('MiSans-Regular.ttf') format('truetype');
+}
+
+html,
+html * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family:MiSans;
+}
+
+header {
+/*	background: #000000;*/
+    position: fixed;
+    padding: 1.5em;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+h1 {
+    margin-bottom: 1.5%;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 10px rgb(0 0 0 / 5%);
+    letter-spacing: .55em;
+    margin-left: 0.7em;
+    font-size: 7.5vw;
+}
+
+h2 {
+    font-weight: 100;
+    font-size: 2em;
+    line-height: 2.2;
+    margin-bottom: -0.35em;
+    padding-top: 13%;
+    letter-spacing: .3em;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 8px rgb(0 0 0 / 20%);
+}
+
+h3 {
+    font-size: 1.5em;
+    font-weight: 100;
+    line-height: 2.75;
+    letter-spacing: .35em;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 8px rgb(0 0 0 / 20%);
+}
+
+footer {
+	margin-top: -3.5em;
+	padding-top: 10em;
+	background-color: #595449 
+}
+.day::before{
+    content: "";
+    position: absolute;
+    z-index: -999;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left:0;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("Day.jpg");
+    opacity:0.7;
+}
+.evening::before{
+    content: "";
+    position: absolute;
+    z-index: -999;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left:0;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("Evening.jpg");
+    opacity:0.7;
+}
+.night::before{
+    content: "";
+    position: absolute;
+    z-index: -999;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left:0;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("Night.jpg");
+    opacity:0.7;
+}
+.hero::before{
+    content: "";
+    position: absolute;
+    z-index: -9999;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left:0;
+	background-color: #bbad90;
+
+}
+.hero {
+    position:relative;
+	position: 100%;
+	height: 54vw;
+	/* background-color: #efdeb9; */
+}
+.hero-content {
+    font-family: 'acumin-pro-extra-condensed', sans-serif;
+    color: #fff;
+    position: absolute;
+    z-index: 20000;
+    padding-top: 4em;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.intro {
+    position: relative;
+    color: #343144;
+    background: #fff;
+    padding: 12.5em 6em 14.5em;
+}
+
+.intro-text {
+    position: relative;
+}
+
+.intro p {
+    font-family: 'acumin-pro-extra-condensed', sans-serif;
+    color: #343144;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    line-height: 1.8;
+    letter-spacing: .325em;
+}
+
+.artworks {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.artwork {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.artwork .countdown{
+	/* padding: 12.5em 6em 10.5em; */
+    padding: 0em 6em 0em;
+	width: 100%;
+	background: #f5f5f5
+}
+.artwork .artwork-description {
+    background: #26223e;
+    color: #fff;
+    width: 50%;
+    padding: 11.25em 13em 11.5em;
+}
+.artworks .directbutton{
+    display: inline-flex;
+    margin-left:30%;
+    margin-bottom:64px;
+    padding: 0em 6em ;
+	/* width: 100%; */
+	background: #f5f5f5;
+    justify-content: center;
+    border-color: black;
+    border-radius: 20px;
+    font-size: 3em;
+}
+.artworks a:visited{
+    color:black;
+    text-decoration: none;
+}
+.artworks a:link{
+    color:black;
+    text-decoration: none;
+}
+.artworks a div:hover{
+    background: #c3c3c3;
+}

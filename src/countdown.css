@@ -1,0 +1,15 @@
+.countdown-box {
+  display: inline-flex;
+  flex-direction:row;
+  color: black;
+}
+.countdown-flex{
+  display: inline-flex;
+  flex-direction: column;
+}
+.countdown-label{
+  font-size: 3em;
+}
+#countdown-day,#countdown-hour,#countdown-minute,#countdown-second{
+  font-size: 6em;
+}
