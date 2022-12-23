@@ -3,6 +3,11 @@
 	src: url('MiSans-Regular.ttf') format('truetype');
 }
 .menu{
+  	height: 50px;
+ 	width: 300px;
+  	border: #696969 1px solid;
+  	display: flex;
+	flex-flow: column nowrap;
     display:none;
 }
 nav {
@@ -23,7 +28,6 @@ main {
     text-align:center;
     min-height: 1080px;
     /* padding-bottom: 577px; */
-
 }
 #content{
     height: 100%;
@@ -118,7 +122,7 @@ body {
 
 }
 #menutext{
-    margin-top: 25%;
+    margin-top: 5%;
 }
 @keyframes fadeInAnimation {
         0% {
@@ -165,4 +169,20 @@ body {
 
 .change .bar3 {
     transform: translate(0, -11px) rotate(45deg);
+}
+
+.menuspace {
+	height: 90px;
+}
+
+.menuspace1 {
+	
+}
+
+.menuspace2 {
+	
+}
+
+.menuspace3 {
+	
 }
