@@ -21,8 +21,8 @@ main {
     background-color: #efdeb9;
     margin: -0px;
     text-align:center;
-    min-height: 100px;
-    
+    min-height: 1080px;
+    /* padding-bottom: 577px; */
 
 }
 #content{
@@ -92,7 +92,7 @@ body {
     background-color: #302c23;
 }
 .menu{
-    position: absolute;
+    position: fixed;
     color:white;
     top: 0px;
     right: 71.3px;
