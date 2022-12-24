@@ -1,19 +1,21 @@
 @font-face {
-	font-family: Misans;
-	src: url('MiSans-Regular.ttf') format('truetype');
+    font-family: Misans;
+    src: url('MiSans-Regular.ttf') format('truetype');
 }
-.menu{
-  	height: 50px;
- 	width: 300px;
-  	border: #696969 1px solid;
-  	display: flex;
-	flex-flow: column nowrap;
-    display:none;
+
+.menu {
+    height: 50px;
+    width: 300px;
+    border: #696969 1px solid;
+    display: flex;
+    flex-flow: column nowrap;
+    /* display: none; */
 }
+
 nav {
     position: fixed;
-    top:0px;
-    right:0px;
+    top: 0px;
+    right: 0px;
     background-color: #383636;
     width: 3.8%;
     height: 100%;
@@ -25,25 +27,30 @@ nav {
 main {
     background-color: #efdeb9;
     margin: -0px;
-    text-align:center;
+    text-align: center;
     min-height: 1080px;
     /* padding-bottom: 577px; */
 }
-#content{
+
+#content {
     height: 100%;
     width: 100%;
 }
-#contenttext{
+
+#contenttext {
     padding-top: 25%;
 }
-#content2{
+
+#content2 {
     height: auto;
     width: auto;
 }
-#contenttext2{
+
+#contenttext2 {
     padding-top: 25px;
     font-size: 0.5em;
 }
+
 /* footer {
     background-color: #595449;
     height: 8.98%; disable
@@ -54,19 +61,21 @@ main {
     text-align:center;
 } */
 
-.left{
-    width:96.2%;
+.left {
+    width: 96.2%;
     min-height: 100%;
 }
-.right{
-    width:3.8%;
+
+.right {
+    width: 3.8%;
 
 }
+
 html,
 body {
     height: 100%;
     width: 100%;
-    font-family:MiSans;
+    font-family: MiSans;
     /* font-size: 32px; */
 }
 
@@ -95,24 +104,26 @@ body {
 #btn:hover {
     background-color: #302c23;
 }
-.menu{
+
+.menu {
     position: fixed;
-    color:white;
+    color: white;
     top: 0px;
     right: 71.3px;
-    width:100%;
-    height:100%;
+    width: 100%;
+    height: 100%;
     background-color: #423b2a;
     opacity: 0;
     z-index: -100;
-    transition: 
-    opacity 1s ease;
+    transition:
+        opacity 1s ease;
     /* clear:both */
     animation: fadeOutAnimation ease 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
-.change{
+
+.change {
     opacity: 1;
     z-index: 100;
     /* display:block; */
@@ -121,28 +132,35 @@ body {
     animation-fill-mode: forwards;
 
 }
-#menutext{
+
+#menutext {
     margin-top: 5%;
 }
+
 @keyframes fadeInAnimation {
-        0% {
-            z-index: 100;
-        }
-        100% {
-            z-index: 100;
-        }
+    0% {
+        z-index: 100;
     }
+
+    100% {
+        z-index: 100;
+    }
+}
+
 @keyframes fadeOutAnimation {
     0% {
         z-index: 100;
     }
-    99%{
+
+    99% {
         z-index: 100;
     }
+
     100% {
-        z-index:-100;
-     }
+        z-index: -100;
     }
+}
+
 .hamburger {
     display: inline-block;
     cursor: pointer;
@@ -172,17 +190,11 @@ body {
 }
 
 .menuspace {
-	height: 90px;
+    height: 90px;
 }
 
-.menuspace1 {
-	
-}
+.menuspace1 {}
 
-.menuspace2 {
-	
-}
+.menuspace2 {}
 
-.menuspace3 {
-	
-}
+.menuspace3 {}
