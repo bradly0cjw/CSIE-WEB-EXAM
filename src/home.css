@@ -3,11 +3,7 @@
 	src: url('MiSans-Regular.ttf') format('truetype');
 }
 .menu{
-  	height: 50px;
- 	width: 300px;
-  	border: #696969 1px solid;
-  	display: flex;
-	flex-flow: column nowrap;
+
 }
 nav {
     position: fixed;
@@ -96,6 +92,8 @@ body {
     background-color: #302c23;
 }
 .menu{
+	display: flex;
+	flex-flow: column nowrap;
     position: absolute;
     color:white;
     top: 0px;
@@ -171,12 +169,11 @@ body {
     transform: translate(0, -11px) rotate(45deg);
 }
 
-.menuspace {
-	font: small-caps bold 24px/1 sans-serif;
-}
-
-.menulist {
+.menulist a {
 	position: relative;
 	top:50px;
 	left: 450px;
+	color: #FFFFFF;
+	font: small-caps bold 24px/1 sans-serif;
+	text-decoration:none;
 }
