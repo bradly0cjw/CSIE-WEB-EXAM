@@ -172,17 +172,11 @@ body {
 }
 
 .menuspace {
-	height: 90px;
+	font: small-caps bold 24px/1 sans-serif;
 }
 
-.menuspace1 {
-	
-}
-
-.menuspace2 {
-	
-}
-
-.menuspace3 {
-	
+.menulist {
+	position: relative;
+	top:50px;
+	left: 450px;
 }
