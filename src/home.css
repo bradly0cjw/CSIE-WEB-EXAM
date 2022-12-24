@@ -9,7 +9,7 @@
     border: #696969 1px solid;
     display: flex;
     flex-flow: column nowrap;
-    display: none;
+    /* display: none; */
 }
 
 nav {
