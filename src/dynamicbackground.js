@@ -3,7 +3,6 @@ var nowtime = new Date().getHours();
 // var hours = (Math.floor((nowtime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))) * (1);
 var hours=parseInt(nowtime)
 var background = document.getElementById("hero");
-console.log(hours)
 if(hours>=6 && hours<16 ){
     background.classList.add("day");
     background.classList.remove("evening");
