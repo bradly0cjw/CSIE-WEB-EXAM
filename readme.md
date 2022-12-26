@@ -3,6 +3,8 @@
      * Fixed in [#a13eda7](https://github.com/bradly0cjw/CSIE-WEB-EXAM/tree/a13eda70aaf378faae75dfc8718c8d6a588ba57a)
 - [ ] 2. Embed facebook iframe
 - [ ] 3. Transport div size need fix
+- [ ] 4. css need to seperate
+    * See [#566e6e](https://github.com/bradly0cjw/CSIE-WEB-EXAM/commit/566e6e069e627b8950485e21309a4a9c46256cdc)
 # T1 (important but not emergency)
 - [X] 1. ~~hambuger menu need fix when css modified~~
      * Move menu css to the top of the file
