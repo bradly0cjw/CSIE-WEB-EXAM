@@ -9,5 +9,5 @@
 # T2 (emergency but not important)
 - [x] 1. ~~add dynamic background~~(finished)
 # T3 (not important and not emergency)
-- [x] 1. ~~Fix blank page when reload page~~
-* temporary fixed
+- [ ] 1. Fix blank page when reload page
+* temporary ***NOT*** fixed
