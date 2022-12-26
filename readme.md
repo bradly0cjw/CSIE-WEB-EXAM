@@ -1,6 +1,7 @@
 # T0 (important and emergency)
 - [x] 1. ~~dynamic background logical error and only get UTC time~~
      * Fixed in [#a13eda7](https://github.com/bradly0cjw/CSIE-WEB-EXAM/tree/a13eda70aaf378faae75dfc8718c8d6a588ba57a)
+- [ ] 2. Embed facebook iframe
 # T1 (important but not emergency)
 - [X] 1. ~~hambuger menu need fix when css modified~~
      * Move menu css to the top of the file
