@@ -105,7 +105,7 @@ body {
     /* position: fixed; */
     display: flex;
     flex-flow: column nowrap;
-    position: absolute;
+    position: fixed;
     color: white;
     top: 0px;
     right: 71.3px;
@@ -142,8 +142,9 @@ body {
     }
 
     100% {
-        z-index: 100;
+       z-index: 100;
     }
+
 }
 
 @keyframes fadeOutAnimation {
@@ -207,14 +208,32 @@ body {
 
 
 .main-service {
-    padding-top: 30px;
-    padding-left: 150px;
+    padding-top: 10px;
+    padding-left: 260px;
 }
 
+.main-service p {
+	padding-top: 10px;
+	font-size: 1.2rem;
+}
 
 .text-left {
     text-align: left;
+	font-size: 30em
 }
+
+.newdate {
+    color: rgb(253, 100, 100);
+    font-weight: bold;
+}
+.main-img {
+	background-color: aqua;
+	margin: 5em;
+    margin-left:10em;
+  	width: 30%;
+  	border: 3px solid green;
+  	padding: 10px;
+
 
 .newdate {
     color: rgb(253, 100, 100);
