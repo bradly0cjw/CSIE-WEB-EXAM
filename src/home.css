@@ -238,3 +238,7 @@ body {
     color: rgb(253, 100, 100);
     font-weight: bold;
 }
+/* light slider width */
+#lightslider img{
+    height: 300px;
+}
