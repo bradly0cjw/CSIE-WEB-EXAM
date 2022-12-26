@@ -1,12 +1,17 @@
-<!DOCTYPE html>
 <html>
 
 <head>
+  <!-- jQuery v1.9.1  -->
+  <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <!-- JQuery lightSlider v1.1.6 -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.css" rel="stylesheet"  />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js"></script>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Testpage</title>
   <meta name="description" content="This is testpage">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/x-icon" href="src/nttulogo.svg">
   <link rel="stylesheet" href="src/home.css">
   <link rel="stylesheet" href="src/footer.css">
   <!-- <script src="src/js.js"></script> -->
@@ -16,16 +21,71 @@
   <div class="left">
     <main>
       <div id="content">
-        <div id="contenttext">歡迎來到台東大學</div>
+        <div class="container">
+          <p style="font-size: 1.7rem;line-height: 3.5rem;border: 1px solid #006699;padding: 50px;">
+            本校創校 75 年校慶，為慶祝而舉辦運動會，歡迎師生同仁、校友、家長及各界人士一同參與，讓我們 齊祝
+            <span style="color:#990000; font-weight:bold"> 台東大學 生日快樂！</span>
+          </p>
+        </div>
+        <div class="container">
+          <h1>最新消息</h1>
+          <div style="padding-top: 30p; display: flex;">
+            <div class="main-service text-left">
+              <p>
+                <span class="newdate">3/21</span> 後夜祭舉行!!!
+              </p>
+              <p>
+                <span class="newdate">3/20</span> 園遊會開辦!!!
+              </p>
+              <p>
+                <span class="newdate">3/18</span> 紅藍大對抗
+              </p>
+              <p>
+                <span class="newdate">3/16</span> 校園電競爭霸戰
+              </p>
+              <p>
+                <span class="newdate">3/14</span> 校慶開幕式在體育館舉行
+              </p>
+              <p>
+                <span class="newdate">2/27</span> 運動項目開放報名
+              </p>
+              <p>
+                <span class="newdate">2/27</span> 表演節目開放報名
+              </p>
+            </div>
+            <div class="main-img" id="lightSlider">活動照片</div>
+          </div>
+        </div>
       </div>
       <button id="btn">TOP</button>
       <div class="menu" id="menu">
-        <div class="menuspace1" id="menutext">首頁</div>
-        <div class="menuspace2" id="menutext">簡介</div>
-        <div class="menuspace3" id="menutext">賽事資訊</div>
-        <div class="menuspace4" id="menutext">交通</div>
-        <div class="menuspace5" id="menutext">關於我們</div>
-        <div class="menuspace5" id="menutext">友站連結</div>
+        <div class="menulist">
+          <div class="menuspace" id="menutext">
+            <a href="index.html">
+              首頁
+            </a>
+          </div>
+          <div class="menuspace" id="menutext"></div>
+          <a href="main.html">
+            最新消息
+          </a>
+          <div class="menuspace" id="menutext"></div>
+          <a href="#">
+            賽事資訊
+          </a>
+          <div class="menuspace" id="menutext"></div>
+          <a href="#">
+            交通
+          </a>
+          <div class="menuspace" id="menutext"></div>
+          <a href="#">
+            關於我們
+          </a>
+          <div class="menuspace" id="menutext"></div>
+          <a href="#">
+            友站連結
+          </a>
+        </div>
       </div>
     </main>
     <!-- <footer>
