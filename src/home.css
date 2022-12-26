@@ -219,7 +219,6 @@ body {
 
 .text-left {
     text-align: left;
-	font-size: 30em
 }
 
 .newdate {
@@ -233,7 +232,7 @@ body {
   	width: 30%;
   	border: 3px solid green;
   	padding: 10px;
-
+}
 
 .newdate {
     color: rgb(253, 100, 100);
