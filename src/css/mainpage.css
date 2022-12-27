@@ -3,7 +3,7 @@
 /* CSS Document */
 @font-face {
     font-family: Misans;
-    src: url('MiSans-Regular.ttf') format('truetype');
+    src: url('../MiSans-Regular.ttf') format('truetype');
 }
 
 html,
