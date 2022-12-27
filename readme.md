@@ -15,6 +15,7 @@
      *  Remove div blue background
 # T2 (emergency but not important)
 - [x] 1. ~~add dynamic background~~(finished)
+- [ ] 2. Remember to add fav icon (use nttulogo.svg)
 # T3 (not important and not emergency)
 - [ ] 1. Fix blank page when reload
      * temporary ***NOT*** fixed
