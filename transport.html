@@ -1,11 +1,6 @@
 <html>
 
 <head>
-  <!-- jQuery v1.9.1  -->
-  <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-  <!-- JQuery lightSlider v1.1.6 -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.css" rel="stylesheet">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js"></script>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Testpage</title>
@@ -14,7 +9,6 @@
   <link rel="shortcut icon" type="image/x-icon" href="src/img/nttulogo.svg">
   <link rel="stylesheet" href="src/css/home.css">
   <link rel="stylesheet" href="src/css/footer.css">
-  <!-- <script src="src/js/lightslider.js"></script> -->
   <!-- <script src="src/js/js.js"></script> -->
 </head>
 
@@ -23,132 +17,102 @@
     <main>
       <div id="content">
         <div class="container">
-          <p style="font-size: 1.7rem;line-height: 3.5rem;border: 1px solid #006699;padding: 50px;">
-            本校創校 75 年校慶，為慶祝而舉辦運動會，歡迎師生同仁、校友、家長及各界人士一同參與，讓我們 齊祝
-            <span style="color:#990000; font-weight:bold"> 台東大學 生日快樂！</span>
+          <p style="font-size: 3.5rem;">
+            <span style="color:#990000; font-weight:bold">交通資訊</span>
           </p>
         </div>
-        <div class="container">
-          <h1>最新消息</h1>
-          <div style="padding-top: 30p; display: flex;">
-            <div class="main-service text-left">
-              <p>
-                <span class="newdate">3/21</span> 後夜祭舉行!!!
-              </p>
-              <p>
-                <span class="newdate">3/20</span> 園遊會開辦!!!
-              </p>
-              <p>
-                <span class="newdate">3/18</span> 紅藍大對抗
-              </p>
-              <p>
-                <span class="newdate">3/16</span> 校園電競爭霸戰
-              </p>
-              <p>
-                <span class="newdate">3/14</span> 校慶開幕式在體育館舉行
-              </p>
-              <p>
-                <span class="newdate">2/27</span> 運動項目開放報名
-              </p>
-              <p>
-                <span class="newdate">2/27</span> 表演節目開放報名
-              </p>
-            </div>
-
-            <div class="main-img">
-              <ul id="lightSlider">
-                <li><img src="src/Day.jpg"></li>
-                <li><img src="src/Evening.jpg"></li>
-                <li><img src="src/Night.jpg"></li>
-              </ul>活動照片
-            </div>
-            <script>
-              $("#lightSlider").lightSlider({
-                item: 1,
-                autoWidth: false,
-                slideMove: 1, // slidemove will be 1 if loop is true
-                slideMargin: 10,
-
-                addClass: '',
-                mode: "slide",
-                useCSS: true,
-                cssEasing: 'ease', //'cubic-bezier(0.25, 0, 0.25, 1)',//
-                easing: 'linear', //'for jquery animation',////
-
-                speed: 400, //ms'
-                auto: true,
-                loop: true,
-                slideEndAnimation: true,
-                pause: 2000,
-
-                keyPress: false,
-                controls: true,
-                prevHtml: '',
-                nextHtml: '',
-
-                rtl: false,
-                adaptiveHeight: false,
-
-                vertical: false,
-                verticalHeight: 500,
-                vThumbWidth: 100,
-
-                thumbItem: 10,
-                pager: true,
-                gallery: false,
-                galleryMargin: 5,
-                thumbMargin: 5,
-                currentPagerPosition: 'middle',
-
-                enableTouch: true,
-                enableDrag: true,
-                freeMove: true,
-                swipeThreshold: 40,
-
-                responsive: [],
-
-                onBeforeStart: function (el) { },
-                onSliderLoad: function (el) { },
-                onBeforeSlide: function (el) { },
-                onAfterSlide: function (el) { },
-                onBeforeNextSlide: function (el) { },
-                onBeforePrevSlide: function (el) { }
-              });
-              ;    
-            </script>
+        <section>
+          <div style="padding-top: 10px; padding-left: 50px; padding-right: 50px;">
+            <table border="0" style="border-collapse: collapse; width: 80%; margin: auto">
+              <td style="width: 33.3333%; text-align: center;">
+                <a href="#drive"><img alt="drive" height="110" src="img/car icon.jpg"
+                    style="background: #2B2828; border-radius: 50%; padding: 8px; margin-bottom: 15px; margin-right: 10px;"
+                    width="110"></a><br>
+                <a href="#drive" style="align-content: center">自行開車</a>
+              </td>
+              <td style="width: 33.3333%; text-align: center;">
+                <a href="#highway"><img alt="train" height="110" src="img/tra icon.jpg"
+                    style="background: #2B2828; border-radius: 50%; padding: 8px; margin-bottom: 15px; margin-right: 10px;"
+                    width="110"></a><br>
+                <a href="#highway" style="align-content: center">台鐵</a>
+              </td>
+              <td style="width: 33.3333%; text-align: center;">
+                <a href="#bus"><img alt="bus" height="110" src="img/bus icon.jpg"
+                    style="background: #2B2828; border-radius: 50%; padding: 8px; margin-bottom: 15px; margin-right: 10px;"
+                    width="110"></a><br>
+                <a href="#bus" style="align-content: center">巴士客運</a>
+              </td>
+            </table>
           </div>
-        </div>
-      </div>
-      <button id="btn">TOP</button>
-      <div class="menu" id="menu">
-        <div class="menulist">
-          <div class="menuspace" id="menutext">
-            <a href="index.html">
-              首頁
+          <div style="padding-left: 200px; padding-right: 200px; padding-top: 80px; text-align: left;" id="drive">
+            <hr>
+            <h3><strong><span style="color: #da1884;">自行開車</span></strong></h3>
+            <p><strong>台9線</strong></p>
+            <li>經卑南鄉東興村過橋(約384.6km處)左轉大學路後直行可達校門。</li>
+            <p><strong>台11線</strong></p>
+            <li>沿臺東市區外環道臨海路，通過豐原大橋後右轉大學路。</li>
+            <div style="color: #010101; background-color: #f8d7da; border-color: #010101; border-radius: 20px">
+              <p style="color: #FF0004; padding: 10px;">校園參觀須至大學門口警衛室辦理訪客證。</p>
+              <p style="color: #FF0004; padding: 10px;">園內設有一般小客車及機車停車場，供駕車賓客使用。</p>
+            </div>
+          </div>
+          <div style="padding-left: 200px; padding-right: 200px; padding-top: 80px; text-align: left;" id="highway">
+            <hr>
+            <h3><strong><span style="color: #da1884;">台鐵</span></strong></h3>
+            <p><strong>台鐵</strong></p>
+            <li>搭火車至知本火車站，轉搭計程車，約10分鐘(6.5公里)車程抵達東大知本校區。</li>
+            <li>可於台鐵知本車站下車，並搭乘東台灣客運8129線巴士，車程約15分鐘，即可抵達東大知本校區。</li>
+            <li><a href="http://ett333023.com.tw/page3_14.htm">東台灣客運8129線時刻表</a></li>
+            <li>搭火車至台東火車站，轉搭計程車，約20分鐘(13公里)車程抵達東大知本校區。</li>
+          </div>
+          <div style="padding-left: 200px; padding-right: 200px; padding-top: 80px; text-align: left;" id="bus">
+            <hr>
+            <h3><strong><span style="color: #da1884;">公車</span></strong></h3>
+            <p><strong>東台灣客運　溫泉線【8129】</strong></p>
+            <li>乘車路線：台東轉運站>>豐源>>台東大學(知本校區)</li>
+            <li>乘車路線：知本火車站>>開發隊>>台東大學(知本校區)</li>
+            <li><a href="http://ett333023.com.tw/page3_14.htm">東台灣客運8129線時刻表</a></li>
+          </div>
+          <div style="padding-left: 200px; padding-right: 200px; padding-top: 80px; text-align: left;">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.7190832233914!2d121.0689473!3d22.7386804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x88a2a73554d8ac1e!2zMjLCsDQ0JzE5LjMiTiAxMjHCsDA0JzA4LjIiRQ!5e0!3m2!1szh-TW!2stw!4v1672070319579!5m2!1szh-TW!2stw"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+        </section>
+
+
+        <button id="btn">TOP</button>
+        <div class="menu" id="menu">
+          <div class="menulist">
+            <div class="menuspace" id="menutext">
+              <a href="index.html">
+                首頁
+              </a>
+            </div>
+            <div class="menuspace" id="menutext"></div>
+            <a href="main.html">
+              最新消息
+            </a>
+            <div class="menuspace" id="menutext"></div>
+            <a href="#">
+              賽事資訊
+            </a>
+            <div class="menuspace" id="menutext"></div>
+            <a href="transport.html">
+              交通
+            </a>
+            <div class="menuspace" id="menutext"></div>
+            <a href="#">
+              關於我們
+            </a>
+            <div class="menuspace" id="menutext"></div>
+            <a href="#">
+              友站連結
             </a>
           </div>
-          <div class="menuspace" id="menutext"></div>
-          <a href="main.html">
-            最新消息
-          </a>
-          <div class="menuspace" id="menutext"></div>
-          <a href="#">
-            賽事資訊
-          </a>
-          <div class="menuspace" id="menutext"></div>
-          <a href="transport.html">
-            交通
-          </a>
-          <div class="menuspace" id="menutext"></div>
-          <a href="#">
-            關於我們
-          </a>
-          <div class="menuspace" id="menutext"></div>
-          <a href="#">
-            友站連結
-          </a>
         </div>
-      </div>
     </main>
     <!-- <footer>
             <div id="content2">
