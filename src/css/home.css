@@ -142,7 +142,7 @@ body {
     }
 
     100% {
-       z-index: 100;
+        z-index: 100;
     }
 
 }
@@ -218,8 +218,8 @@ body {
 }
 
 .main-service p {
-	padding-top: 10px;
-	font-size: 1.2rem;
+    padding-top: 10px;
+    font-size: 1.2rem;
 }
 
 .text-left {
@@ -230,26 +230,28 @@ body {
     color: rgb(253, 100, 100);
     font-weight: bold;
 }
+
 section {
-	height: 80%;
+    height: 80%;
     width: 100%;
 }
 
 
 .main-img {
-	background-color: aqua;
-	margin: 5em;
-    margin-left:10em;
-  	width: 30%;
-  	border: 3px solid green;
-  	padding: 10px;
+    background-color: aqua;
+    margin: 5em;
+    margin-left: 10em;
+    width: 30%;
+    border: 3px solid green;
+    padding: 10px;
 }
 
 .newdate {
     color: rgb(253, 100, 100);
     font-weight: bold;
 }
+
 /* light slider width */
-#lightslider img{
+#lightslider img {
     height: 300px;
 }
