@@ -69,7 +69,7 @@ footer {
     left: 0;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    background-image: url("Day.jpg");
+    background-image: url("../img/Day.jpg");
     opacity: 0.7;
 }
 
@@ -83,7 +83,7 @@ footer {
     left: 0;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    background-image: url("Evening.jpg");
+    background-image: url("../img/Evening.jpg");
     opacity: 0.7;
 }
 
@@ -97,7 +97,7 @@ footer {
     left: 0;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    background-image: url("Night.jpg");
+    background-image: url("../img/Night.jpg");
     opacity: 0.7;
 }
 
