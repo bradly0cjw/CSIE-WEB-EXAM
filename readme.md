@@ -6,10 +6,10 @@
 - [ ] 4. css need to seperate
      * See [#566e6e](https://github.com/bradly0cjw/CSIE-WEB-EXAM/commit/566e6e069e627b8950485e21309a4a9c46256cdc)
 # T1 (important but not emergency)
-- [X] 1. ~~hambuger menu need fix when css modified~~
+- [  ] 1. ~~hambuger menu need fix when css modified~~
      * Move menu css to the top of the file
-     * Issue disappear when using flex
-        * Temporary remove javascript that control menu display mode
+     * ~~Issue disappear when using flex~~
+        * ~~Temporary remove javascript that control menu display mode~~
 - [ ] 2. main min-height and height can't set any percentage only direct number eg 1080px
 - [ ] 3. Remember to change light slider image
      *  Remove div blue background
