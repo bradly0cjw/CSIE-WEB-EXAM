@@ -22,4 +22,4 @@
 - [ ] 2. Embed adblock detector
      * see [Stack overflow](https://stackoverflow.com/questions/4869154/how-to-detect-adblock-on-my-website)
      * detected then return to rick roll
-	  
+	 
