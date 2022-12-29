@@ -1,0 +1,20 @@
+/* CSS Document */
+
+
+.event_title {
+	font-weight: 500;
+	font-size: 46px;
+	text-align: left;
+	padding-top: 100px;
+	padding-left: 15%;
+	color: #027fff;
+}
+
+.tile-content {
+	margin-left: auto;
+	margin-right: auto;
+	background: #FFFFFF;
+	width: 70%;
+	height: 15%;
+	border-radius:15px;
+}

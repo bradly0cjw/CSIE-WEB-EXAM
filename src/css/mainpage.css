@@ -6,6 +6,13 @@
     src: url('../MiSans-Regular.ttf') format('truetype');
 }
 
+.ads{
+    opacity: 0;
+    position: absolute;
+    top:0;
+    right:0;
+}
+
 html,
 html * {
     box-sizing: border-box;
@@ -69,7 +76,7 @@ footer {
     left: 0;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    background-image: url("Day.jpg");
+    background-image: url("../img/Day.jpg");
     opacity: 0.7;
 }
 
@@ -83,7 +90,7 @@ footer {
     left: 0;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    background-image: url("Evening.jpg");
+    background-image: url("../img/Evening.jpg");
     opacity: 0.7;
 }
 
@@ -97,7 +104,7 @@ footer {
     left: 0;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    background-image: url("Night.jpg");
+    background-image: url("../img/Night.jpg");
     opacity: 0.7;
 }
 

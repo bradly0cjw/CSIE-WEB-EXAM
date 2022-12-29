@@ -83,8 +83,8 @@ body {
     position: fixed;
     height: 72px;
     width: 72px;
-    bottom: 10%;
-    left: 0.5%;
+    bottom: -80px;
+    left: 9.5px;
     z-index: 99;
     font-size: 18px;
     border: none;
@@ -95,6 +95,13 @@ body {
     cursor: pointer;
     padding: 15px;
     border-radius: 100%;
+    transition:
+        bottom 0.25s ease
+
+}
+#btn.show{
+    bottom:9.5px
+
 }
 
 #btn:hover {
@@ -103,8 +110,7 @@ body {
 
 .menu {
     /* position: fixed; */
-    display: flex;
-    flex-flow: column nowrap;
+    
     position: fixed;
     color: white;
     top: 0px;
@@ -254,4 +260,21 @@ section {
 /* light slider width */
 #lightslider img {
     height: 300px;
+}
+
+
+/*########################*/
+.menulist {
+	display: flex;
+    flex-flow: column nowrap;
+}
+
+figure {
+	margin: 0px;
+	background: top 0% left 50%;
+    background-repeat: no-repeat;
+    /* background-image: url("../../img/bg_menu_s.jpg"); */
+    background-size: cover;
+    width: 100%;
+    height: 100%;
 }

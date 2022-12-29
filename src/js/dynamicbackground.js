@@ -16,4 +16,5 @@ var x = setInterval(function () {
         background.classList.remove("evening");
         background.classList.add("night");
     }
+
 }, 1000);
