@@ -6,6 +6,13 @@
     src: url('../MiSans-Regular.ttf') format('truetype');
 }
 
+.ads{
+    opacity: 0;
+    position: absolute;
+    top:0;
+    right:0;
+}
+
 html,
 html * {
     box-sizing: border-box;
