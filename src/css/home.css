@@ -103,8 +103,7 @@ body {
 
 .menu {
     /* position: fixed; */
-    display: flex;
-    flex-flow: column nowrap;
+    
     position: fixed;
     color: white;
     top: 0px;
@@ -254,4 +253,19 @@ section {
 /* light slider width */
 #lightslider img {
     height: 300px;
+}
+
+
+/*########################*/
+.menulist {
+	display: flex;
+    flex-flow: column nowrap;
+}
+
+figure {
+	margin: 0px;
+	background: url("../../img/bg_menu_s.jpg") top 0% left 50% no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
 }

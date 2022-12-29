@@ -13,6 +13,7 @@
 - [ ] 2. main min-height and height can't set any percentage only direct number eg 1080px
 - [ ] 3. Remember to change light slider image
      *  Remove div blue background
+- [ ] 4. 將選單的三角形補上
 # T2 (emergency but not important)
 - [x] 1. ~~add dynamic background~~(finished)
 - [ ] 2. Remember to add fav icon (use nttulogo.svg)
