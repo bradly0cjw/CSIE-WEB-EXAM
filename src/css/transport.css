@@ -1,12 +1,59 @@
-
 .transporticon {
-	background: #2B2828; border-radius: 50%; padding: 8px; margin-bottom: 15px; margin-right: 10px;
+    background: #2B2828;
+    border-radius: 50%;
+    padding: 8px;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    width: 110px;
+    height: 110px;
 }
 
 td {
-	width: 33.3333%; text-align: center;
+    width: 33.3333%;
+    text-align: center;
 }
 
 .transporticon_content {
-	padding-left: 200px; padding-right: 200px; padding-top: 80px; text-align: left;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 80px;
+    text-align: left;
+}
+
+.container p span {
+    color: #990000;
+    font-weight: bold;
+    font-size: 3.5rem;
+}
+
+.method {
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.method table {
+    border: 0;
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto
+}
+.method table td a{
+    align-content: center
+}
+
+h3 strong span {
+    color: #da1884;
+}
+
+#drive div {
+    color: #010101;
+    background-color: #f8d7da;
+    border-color: #010101;
+    border-radius: 20px;
+}
+
+#drive div p {
+    color: #FF0004;
+    padding: 10px;
 }

@@ -7,11 +7,11 @@
     /* display: none; */
 }
 
-.ads{
+.ads {
     opacity: 0;
     position: absolute;
-    top:0;
-    right:0;
+    top: 0;
+    right: 0;
 }
 
 nav {
@@ -104,11 +104,10 @@ body {
     border-radius: 100%;
     transition:
         bottom 0.25s ease
-
 }
-#btn.show{
-    bottom:9.5px
 
+#btn.show {
+    bottom: 9.5px
 }
 
 #btn:hover {
@@ -117,7 +116,7 @@ body {
 
 .menu {
     /* position: fixed; */
-    
+
     position: fixed;
     color: white;
     top: 0px;
@@ -133,6 +132,14 @@ body {
     animation: fadeOutAnimation ease 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+}
+
+.menuimage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 42.2%;
+    height: 100%;
 }
 
 .change {
@@ -272,17 +279,16 @@ section {
 
 /*########################*/
 .menulist {
-	display: flex;
+    display: flex;
     flex-flow: column nowrap;
 }
 
 figure {
-	margin: 0px;
-	background: top 0% left 50%;
+    margin: 0px;
+    background: top 0% left 50%;
     background-repeat: no-repeat;
     /* background-image: url("../../img/bg_menu_s.jpg"); */
     background-size: cover;
     width: 100%;
     height: 100%;
 }
-
