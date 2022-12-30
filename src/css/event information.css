@@ -43,6 +43,7 @@
 }
 
 .plus{
+	cursor: pointer;
 	position: absolute;
 	bottom:30px;
 	right: 20px;
@@ -131,4 +132,5 @@ p {
 .egg1 {
 	color: white;
 	text-decoration:none;
+	cursor: default;
 }

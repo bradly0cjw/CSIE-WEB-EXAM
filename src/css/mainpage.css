@@ -60,12 +60,6 @@ h3 {
     text-shadow: 0px 0px 8px rgb(0 0 0 / 20%);
 }
 
-footer {
-    margin-top: -3.5em;
-    padding-top: 10em;
-    background-color: #595449
-}
-
 .day::before {
     content: "";
     position: absolute;
@@ -143,7 +137,7 @@ footer {
     position: relative;
     color: #343144;
     background: #fff;
-    padding: 12.5em 6em 14.5em;
+    padding: 12.5em 6em 13.5em;
 }
 
 .intro-text {
@@ -164,7 +158,9 @@ footer {
 .artworks {
     position: relative;
     width: 100%;
-    overflow: hidden;
+    overflow: visible;
+    height: max-content;
+
 }
 
 .artwork {
@@ -179,11 +175,11 @@ footer {
     /* padding: 12.5em 6em 10.5em; */
     padding: 0em 6em 0em;
     width: 100%;
-    background: #f5f5f5
+    /* background: #f5f5f5 */
 }
 
 .artwork .artwork-description {
-    background: #26223e;
+    /* background: #26223e; */
     color: #fff;
     width: 50%;
     padding: 11.25em 13em 11.5em;
@@ -191,7 +187,9 @@ footer {
 
 .artworks .directbutton {
     display: inline-flex;
-    margin-left: 30%;
+    margin-left: 575px;
+    margin-right: auto;
+    margin-top: 50px;
     margin-bottom: 64px;
     padding: 0em 6em;
     /* width: 100%; */
