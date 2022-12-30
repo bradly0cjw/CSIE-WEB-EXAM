@@ -25,4 +25,8 @@
 - [x] 2. ~~Embed adblock detector~~(finished)
      * ~~see [Stack overflow](https://stackoverflow.com/questions/4869154/how-to-detect-adblock-on-my-website)~~
      * ~~detected then return to rick roll~~
+# Improvement
+1. background opacity
+     1. Before ::before<br>
+      after backdrop-filter blur()
 	 
