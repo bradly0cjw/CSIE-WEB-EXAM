@@ -51,7 +51,7 @@
 	border-radius: 50px;
 	background-color: aqua;
 }
-.bar1 {
+.plus .bar1 {
 	position:relative;
     width: 35px;
     height: 5px;
@@ -61,7 +61,7 @@
     transition: 0.4s;
 }
 
-.bar2{
+.plus .bar2{
 	position:relative;
 	width: 35px;
     height: 5px;
@@ -70,4 +70,11 @@
     background-color: rgb(255, 255, 255);
     transition: 0.4s;
 	rotate: 90deg;
+}
+
+.expand .bar1{
+	rotate: -45deg;
+}
+.expand .bar2{
+	rotate: 45deg;
 }
