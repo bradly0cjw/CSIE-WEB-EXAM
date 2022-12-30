@@ -1,0 +1,49 @@
+.down{
+    z-index: 99;
+    position: absolute;
+    bottom:20px;
+    left:48.5vw;
+    animation-name: down;
+    animation-duration: 1s;
+    animation-direction:alternate;
+    animation-iteration-count:infinite;
+    animation-timing-function:cubic-bezier(0, 0, 0.2, 1);
+    filter:drop-shadow(0px 0px 10px black) invert(1) 
+}
+@keyframes down{
+    0%{
+        bottom:20px
+    }
+    100%{
+        bottom:40px
+    }
+}
+.arrowl,.arrowr{
+    background-color: black;
+    border-radius: 50px;
+    width: 40px;
+    height: 5px;
+}
+.arrowl{
+    position: relative;
+    rotate: 45deg;
+    left: -21px;
+}
+.arrowr{
+    position: relative;
+    rotate: -45deg;
+    left: 4px;
+    bottom: 5px;
+}
+#arr3{
+    bottom:30px
+}
+#arr4{
+    bottom:35px
+}
+#arr5{
+    bottom:60px
+}
+#arr6{
+    bottom:65px
+}
