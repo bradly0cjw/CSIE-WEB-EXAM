@@ -28,37 +28,40 @@ if (getUrlParam("set") == true || localStorage.getItem('dev') == 1) {
 	// }, 200); // don't too fast or will make the result wrong.
 	document.addEventListener('contextmenu', event => event.preventDefault());
 	document.addEventListener('keydown', function (event) {
-
-
 		if (event.key == 'F12') {
 			// console.log("F12 was pressed");
 			window.location.href = "https://www.youtube.com/watch?v=o-YBDTqX_ZU";
 			event.preventDefault();
 			return false;
 		}
+    });
+    document.addEventListener('keydown', function (event) {
 		// disable I key
-		if (event.ctrlKey && event.shiftKey && event.key == 'I') {
+		if (event.ctrlKey && event.shiftKey && event.key === 'I') {
 			window.location.href = "https://www.youtube.com/watch?v=o-YBDTqX_ZU";
 			event.preventDefault();
 			return false;
 		}
-
+    });
+    document.addEventListener('keydown', function (event) {
 		// disable J key
-		if (event.ctrlKey && event.shiftKey && event.key == 'J') {
+		if (event.ctrlKey && event.shiftKey && event.key === 'J') {
 			window.location.href = "https://www.youtube.com/watch?v=o-YBDTqX_ZU";
 			event.preventDefault();
 			return false;
 		}
-
+    });
+    document.addEventListener('keydown', function (event) {
         // disable S key    
-        if (event.ctrlKey && event.key == 'S') {
+        if (event.ctrlKey && event.key === 'S') {
 			window.location.href = "https://www.youtube.com/watch?v=o-YBDTqX_ZU";
 			event.preventDefault();
 			return false;
 		}
-
+    });
+    document.addEventListener('keydown', function (event) {    
 		// disable U key
-		if (event.ctrlKey && event.key == 'K') {
+		if (event.ctrlKey && event.key == 'U') {
 			window.location.href = "https://www.youtube.com/watch?v=o-YBDTqX_ZU";
 			event.preventDefault();
 			return false;
