@@ -100,7 +100,7 @@ h3 {
     opacity: 0.7;
 }
 
-.hero::before {
+.loading::before {
     content: "";
     position: absolute;
     z-index: -9999;
@@ -109,6 +109,10 @@ h3 {
     bottom: 0;
     left: 0;
     background-color: #bbad90;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* background-image: url("../img/Day.jpg"); */
+    opacity: 0.7;
 
 }
 
@@ -116,6 +120,7 @@ h3 {
     /* position: relative; */
     /* min-height: 1080px; */
     height: 100vh;
+    background-color: rgba(0, 0, 0, 0.562);
     /* background-color: #efdeb9; */
 }
 
