@@ -1,5 +1,7 @@
 /* CSS Document */
-
+#content{
+	height: auto
+}
 
 .about_us_content {
 	position: relative;

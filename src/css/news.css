@@ -1,0 +1,47 @@
+.main-service {
+    padding-top: 10px;
+    padding-left: 260px;
+}
+
+.main-service p {
+    padding-top: 10px;
+    font-size: 1.2rem;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.newdate {
+    color: rgb(253, 100, 100);
+    font-weight: bold;
+}
+
+section {
+    height: 80%;
+    width: 100%;
+}
+
+
+.main-img {
+    background-color: aqua;
+    margin: 5em;
+    margin-left: 10em;
+    width: 30%;
+    border: 3px solid green;
+    padding: 10px;
+}
+
+.newdate {
+    color: rgb(253, 100, 100);
+    font-weight: bold;
+}
+
+/* light slider width */
+#lightslider img {
+    height: 300px;
+}
+
+#content{
+    height: 100%;
+}
