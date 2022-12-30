@@ -102,3 +102,21 @@
 	/* height: 100%; */
 	/* border-radius: 15px ; */
 }
+.intro {
+	display: flex;
+	flex-direction: column;
+	font-weight: 100;
+	/* 水平置中 */
+  	justify-content: center;    
+  	/* 垂直置中 */
+  	align-content: center; 
+	
+}
+
+p {
+	font-size: 1.3em;
+	margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
