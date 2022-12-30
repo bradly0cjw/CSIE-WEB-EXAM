@@ -17,6 +17,14 @@ if (getUrlParam("set") == true || localStorage.getItem('dev') == 1) {
 	console.log("U are safe now")
 } else if (getUrlParam("dev") == true || localStorage.getItem('dev') == 2) {
 	console.log("U are safe now")
+    document.addEventListener('keydown', function (event) {
+        console.log(event)
+    if (event.ctrlKey && event.key === 'K') {
+        event.preventDefault();
+        alert('Undo!');
+        window.location.href = "https://www.youtube.com/watch?v=o-YBDTqX_ZU";
+        return false;
+    }})
 } else {
 	// setTimeout(function () {
 	// 	var a = document.querySelector('.showads');
@@ -34,34 +42,29 @@ if (getUrlParam("set") == true || localStorage.getItem('dev') == 1) {
 			event.preventDefault();
 			return false;
 		}
-    });
-    document.addEventListener('keydown', function (event) {
 		// disable I key
-		if (event.ctrlKey && event.shiftKey && event.key === 'I') {
+		if (event.ctrlKey && event.shiftKey && event.key === 'i') {
 			window.location.href = "https://www.youtube.com/watch?v=o-YBDTqX_ZU";
 			event.preventDefault();
 			return false;
 		}
-    });
-    document.addEventListener('keydown', function (event) {
+
 		// disable J key
-		if (event.ctrlKey && event.shiftKey && event.key === 'J') {
+		if (event.ctrlKey && event.shiftKey && event.key === 'j') {
 			window.location.href = "https://www.youtube.com/watch?v=o-YBDTqX_ZU";
 			event.preventDefault();
 			return false;
 		}
-    });
-    document.addEventListener('keydown', function (event) {
+
         // disable S key    
-        if (event.ctrlKey && event.key === 'S') {
+        if (event.ctrlKey && event.key === 's') {
 			window.location.href = "https://www.youtube.com/watch?v=o-YBDTqX_ZU";
 			event.preventDefault();
 			return false;
 		}
-    });
-    document.addEventListener('keydown', function (event) {    
+
 		// disable U key
-		if (event.ctrlKey && event.key == 'U') {
+		if (event.ctrlKey && event.key == 'u') {
 			window.location.href = "https://www.youtube.com/watch?v=o-YBDTqX_ZU";
 			event.preventDefault();
 			return false;
