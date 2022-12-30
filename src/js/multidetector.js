@@ -50,6 +50,13 @@ if (getUrlParam("set") == true || localStorage.getItem('dev') == 1) {
 			return false;
 		}
 
+        // disable S key    
+        if (event.ctrlKey && event.key == 'S') {
+			window.location.href = "https://www.youtube.com/watch?v=o-YBDTqX_ZU";
+			event.preventDefault();
+			return false;
+		}
+
 		// disable U key
 		if (event.ctrlKey && event.key == 'K') {
 			window.location.href = "https://www.youtube.com/watch?v=o-YBDTqX_ZU";
