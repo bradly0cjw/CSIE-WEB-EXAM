@@ -80,7 +80,9 @@
 .expand .bar2{
 	rotate: 45deg;
 }
-#race.title-content .content{
+.title-content .content{
+	opacity: 0;
+	visibility: hidden;
 	position: absolute;
 	background-color: rgba(61, 68, 66, 0.555);
 	color:#FFFFFF;
@@ -89,16 +91,17 @@
 	height: 100%;
 	border-radius: 15px;
 	transition: 0.4s;
+	backdrop-filter: blur(10px);
 }
 
-#race.expand .content{
-	opacity: 0;
-	visibility: hidden;
+.expand .content{
+	opacity: 1;
+	visibility: visible;
 	/* position: absolute; */
 	/* color:#FFFFFF; */
 	/* background-color: aquamarine; */
 	/* right:0; */
-	width:0%;
+	/* width:0%; */
 	/* height: 100%; */
 	/* border-radius: 15px ; */
 }
