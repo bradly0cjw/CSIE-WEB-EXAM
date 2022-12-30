@@ -11,10 +11,41 @@
 }
 
 .tile-content {
+	position: relative;
 	margin-left: auto;
 	margin-right: auto;
 	background: #FFFFFF;
 	width: 70%;
 	height: 15%;
 	border-radius:15px;
+}
+
+.plus{
+	position: absolute;
+	bottom:30px;
+	right: 3px;
+	height: 45px;
+	width: 45px;
+	border-radius: 50px;
+	background-color: aqua;
+}
+.bar1 {
+	position:relative;
+    width: 35px;
+    height: 5px;
+    background-color: rgb(255, 255, 255);
+	top:14px;
+	right: -5px;
+    transition: 0.4s;
+}
+
+.bar2{
+	position:relative;
+	width: 35px;
+    height: 5px;
+	top: 3px;
+	right: -5px;
+    background-color: rgb(255, 255, 255);
+    transition: 0.4s;
+	rotate: 90deg;
 }
