@@ -18,6 +18,28 @@
 	width: 70%;
 	height: 15%;
 	border-radius:15px;
+	background-size: cover;
+}
+
+#race {
+	background-image: url("../../img/race.jpg");
+	
+}
+
+#ironmam {
+	background-image: url("../../img/ironman.jpg");
+}
+
+#watergun {
+	background-image: url(../../img/watergun.png);
+}
+
+#bigthx {
+	background-image: url(../../img/bigthx.jpeg);
+}
+
+#Alice {
+	background-image: url(../../img/acecardfire.jpg);background-size: 750px 918px;background-position:0px -100px;
 }
 
 .plus{
