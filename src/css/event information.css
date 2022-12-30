@@ -45,29 +45,31 @@
 .plus{
 	position: absolute;
 	bottom:30px;
-	right: 3px;
+	right: 20px;
 	height: 45px;
 	width: 45px;
 	border-radius: 50px;
-	background-color: aqua;
+	background-color: rgb(255, 255, 255);
 }
 .plus .bar1 {
 	position:relative;
-    width: 35px;
-    height: 5px;
-    background-color: rgb(255, 255, 255);
-	top:14px;
-	right: -5px;
+    width: 26px;
+    height: 4px;
+	border-radius: 50px;
+    background-color: rgb(0, 0, 0);
+	top:14.4px;
+	right: -9.2px;
     transition: 0.4s;
 }
 
 .plus .bar2{
 	position:relative;
-	width: 35px;
-    height: 5px;
-	top: 3px;
-	right: -5px;
-    background-color: rgb(255, 255, 255);
+	width: 26px;
+    height: 4px;
+	border-radius: 50px;
+	top: 4px;
+	right: -8.9px;
+    background-color: rgb(0, 0, 0);
     transition: 0.4s;
 	rotate: 90deg;
 }
@@ -77,4 +79,7 @@
 }
 .expand .bar2{
 	rotate: 45deg;
+}
+#race.title-content .content{
+
 }
