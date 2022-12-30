@@ -1,0 +1,26 @@
+/* CSS Document */
+
+
+.about_us_content {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	background: #FFFFFF;
+	width: 70%;
+	height: 80%;
+	border-radius:15px;
+	background-size: cover;	
+}
+
+#schoolmap {
+	width: 1000px
+}
+
+.linktext {
+	color:#000000;
+	font-size: 1.5em;
+}
+
+p {
+	
+}
