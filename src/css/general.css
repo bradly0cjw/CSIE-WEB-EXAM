@@ -4,7 +4,7 @@
 }
 
 .menu {
-    /* display: none; */
+    display: none;
 }
 
 .ads {
@@ -30,7 +30,7 @@ main {
     background-color: #efdeb9;
     margin: -0px;
     text-align: center;
-    min-height: 1080px;
+    min-height: 100vh;
     /* padding-bottom: 577px; */
 
 }
@@ -153,7 +153,7 @@ body {
 
 }
 
-#menutext {
+.menutext {
     margin-top: 5%;
 }
 
@@ -213,6 +213,7 @@ body {
 
 .menulist a {
     position: relative;
+    z-index: 3;
     top: 50px;
     left: 450px;
     color: #FFFFFF;
@@ -220,11 +221,27 @@ body {
     text-decoration: none;
 }
 
+.menulist {
+    display: flex;
+    flex-flow: column nowrap;
+}
 
+#menu.change #menuimage {
+    right:0%
+}
+#menuimage{
+    position: relative;
+    margin: 0px;
+    background: top 0% left 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    right: 100%;
+    transition: right 2s cubic-bezier(0.65, 0.05, 0.36, 1);
+}
 
-
-
-/*########################*/
 .container {
     padding-top: 40px;
     padding-right: 240px;
@@ -234,63 +251,53 @@ body {
 }
 
 
-.main-service {
-    padding-top: 10px;
-    padding-left: 260px;
+
+@keyframes menuoption{
+    0% {
+        left:-53vw;
+    }
+
+    100% {
+        left: 450px;
+    }
 }
-
-.main-service p {
-    padding-top: 10px;
-    font-size: 1.2rem;
+.change #text1{
+    animation-name: menuoption;
+    animation-delay: 0s;
+    animation-duration: 1s;
+	animation-direction:normal;
+	animation-timing-function:cubic-bezier(0.65, 0.05, 0.36, 1);
+	animation-fill-mode: both;
 }
-
-.text-left {
-    text-align: left;
+.change #text2{
+    animation-name: menuoption;
+    animation-delay: 0.25s;
+    animation-duration: 1s;
+	animation-direction:normal;
+	animation-timing-function:cubic-bezier(0.65, 0.05, 0.36, 1);
+	animation-fill-mode: both;
 }
-
-.newdate {
-    color: rgb(253, 100, 100);
-    font-weight: bold;
+.change #text3{
+    animation-name: menuoption;
+    animation-delay: 0.5s;
+    animation-duration: 1s;
+	animation-direction:normal;
+	animation-timing-function:cubic-bezier(0.65, 0.05, 0.36, 1);
+	animation-fill-mode: both;
 }
-
-section {
-    height: 80%;
-    width: 100%;
+.change #text4{
+    animation-name: menuoption;
+    animation-delay: 0.75s;
+    animation-duration: 1s;
+	animation-direction:normal;
+	animation-timing-function:cubic-bezier(0.65, 0.05, 0.36, 1);
+	animation-fill-mode: both;
 }
-
-
-.main-img {
-    background-color: aqua;
-    margin: 5em;
-    margin-left: 10em;
-    width: 30%;
-    border: 3px solid green;
-    padding: 10px;
-}
-
-.newdate {
-    color: rgb(253, 100, 100);
-    font-weight: bold;
-}
-
-/* light slider width */
-#lightslider img {
-    height: 300px;
-}
-
-
-/*########################*/
-.menulist {
-    display: flex;
-    flex-flow: column nowrap;
-}
-
-figure {
-    margin: 0px;
-    background: top 0% left 50%;
-    background-repeat: no-repeat;
-    /* background-image: url("../../img/bg_menu_s.jpg"); */
-    background-size: cover;
-    width: 100%;
-    height: 100%;
+.change #text5{
+    animation-name: menuoption;
+    animation-delay: 1s;
+    animation-duration: 1s;
+	animation-direction:normal;
+	animation-timing-function:cubic-bezier(0.65, 0.05, 0.36, 1);
+	animation-fill-mode: both;
 }

@@ -1,13 +1,15 @@
 <!-- <!DOCTYPE html> -->
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Testpage</title>
+  <title>交通資訊</title>
   <meta name="description" content="This is testpage">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" type="image/x-icon" href="src/img/nttulogo.svg">
   <link rel="stylesheet" href="src/css/general.css">
+  <link rel="stylesheet" href="src/css/transport.css">
   <link rel="stylesheet" href="src/css/footer.css">
   <link rel="stylesheet" href="src/css/down.css">
   <link rel="stylesheet" href="src/css/title.css">
@@ -47,50 +49,108 @@
       </div>
       <section class="title" id="title">
         <!-- change here -->
+
         <div>
-          <h2>堅持，就是勝利。</h2>
-          <h3>加油!奥利给!!!&nbsp;</h3>
+          <h2>交通一手握，出行無憂。</h2>
+          <h3>隨時掌握交通資訊，精確出行&nbsp;</h3>
         </div>
       </section>
       <div id="content">
-        <!-- change here -->
+        <div class="container">
+          <p>
+            <span>交通資訊</span>
+          </p>
+        </div>
+        <section>
+          <div class="method">
+            <table>
+              <td>
+                <div onclick="document.getElementById('drive').scrollIntoView({behavior: 'smooth'})"><img alt="drive" src="src/img/car icon.jpg" class="transporticon"><br>
+                <div onclick="document.getElementById('drive').scrollIntoView({behavior: 'smooth'})">自行開車</div></div>
+              </td>
+              <td>
+                <div onclick="document.getElementById('railway').scrollIntoView({behavior: 'smooth'})"><img alt="train" src="src/img/tra icon.jpg" class="transporticon"><br>
+                <div onclick="document.getElementById('railway').scrollIntoView({behavior: 'smooth'})">台鐵</div></div>
+              </td>
+              <td>
+                <div onclick="document.getElementById('bus').scrollIntoView({behavior: 'smooth'})"><img alt="bus" src="src/img/bus icon.jpg" class="transporticon"><br>
+                <div onclick="document.getElementById('bus').scrollIntoView({behavior: 'smooth'})">巴士客運</div></div>
+              </td>
+            </table>
+          </div>
+          <div class="transporticon_content" id="drive">
+            <hr>
+            <h3><strong><span>自行開車</span></strong></h3>
+            <p><strong>台9線</strong></p>
+            <li>經卑南鄉東興村過橋(約384.6km處)左轉大學路後直行可達校門。</li>
+            <p><strong>台11線</strong></p>
+            <li>沿臺東市區外環道臨海路，通過豐原大橋後右轉大學路。</li>
+            <div>
+              <p>校園參觀須至大學門口警衛室辦理訪客證。</p>
+              <p>園內設有一般小客車及機車停車場，供駕車賓客使用。</p>
+            </div>
+          </div>
+          <div class="transporticon_content" id="railway">
+            <hr>
+            <h3><strong><span>台鐵</span></strong></h3>
+            <p><strong>台鐵</strong></p>
+            <li>搭火車至知本火車站，轉搭計程車，約10分鐘(6.5公里)車程抵達東大知本校區。</li>
+            <li>可於台鐵知本車站下車，並搭乘東台灣客運8129線巴士，車程約15分鐘，即可抵達東大知本校區。</li>
+            <!-- <li><a href="http://ett333023.com.tw/page3_14.htm">東台灣客運8129線時刻表</a></li> -->
+            <li>搭火車至台東火車站，轉搭計程車，約20分鐘(13公里)車程抵達東大知本校區。</li>
+          </div>
+          <div class="transporticon_content" id="bus">
+            <hr>
+            <h3><strong><span>公車</span></strong></h3>
+            <p><strong>東台灣客運　溫泉線【8129】</strong></p>
+            <li>乘車路線：台東轉運站&#62;&#62;豐源&#62;&#62;台東大學(知本校區)</li>
+            <li>乘車路線：知本火車站&#62;&#62;開發隊&#62;&#62;台東大學(知本校區)</li>
+            <li><a href="http://ett333023.com.tw/page3_14.htm">東台灣客運8129線時刻表</a></li>
+          </div>
+          <div class="transporticon_content" id="gamp">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.7190832233914!2d121.0689473!3d22.7386804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x88a2a73554d8ac1e!2zMjLCsDQ0JzE5LjMiTiAxMjHCsDA0JzA4LjIiRQ!5e0!3m2!1szh-TW!2stw!4v1672070319579!5m2!1szh-TW!2stw"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </section>
       </div>
-      <section>
-
-        <!-- change here -->
-      </section>
 
 
       <button id="btn">TOP</button>
       <div class="menu" id="menu">
         <div class="menulist">
           <div class="menuspace menutext">
-            <a href="index.html">
+            <a id="text1" href="index.html">
               回到首頁
             </a>
           </div>
-          <div class="menuspace menutext"></div>
-          <a href="news.html">
-            最新消息
-          </a>
-          <div class="menuspace menutext"></div>
-          <a href="eventinfo.html">
-            賽事資訊
-          </a>
-          <div class="menuspace menutext"></div>
-          <a href="transportation.html">
-            交通資訊
-          </a>
+          <div class="menuspace menutext">
+            <a id="text2" href="news.html">
+              最新消息
+            </a>
+          </div>
+          <div class="menuspace menutext">
+            <a id="text3" href="eventinfo.html">
+              賽事資訊
+            </a>
+          </div>
+          <div class="menuspace menutext">
+            <a id="text4" href="transportation.html">
+              交通資訊
+            </a>
+          </div>
           <!--
           <div class="menuspace menutext"></div>
-          <a href="#">
+          <a href="transportation.html">
             關於我們
           </a>
 -->
-          <div class="menuspace menutext"></div>
-          <a href="recommendsite.html">
-            友站連結
-          </a>
+          <div class="menuspace menutext">
+            <a id="text5" href="recommendsite.html">
+              友站連結
+            </a>
+          </div>
         </div>
         <div class="menuimage">
           <figure id="menuimage"></figure>

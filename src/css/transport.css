@@ -38,8 +38,10 @@ td {
     width: 80%;
     margin: auto
 }
-.method table td a{
-    align-content: center
+.method table td div{
+    align-content: center;
+    text-decoration-line: underline;
+    cursor: pointer;
 }
 
 h3 strong span {

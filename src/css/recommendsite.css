@@ -1,0 +1,43 @@
+/* CSS Document */
+#content{
+	height: auto
+}
+main{
+	padding-bottom: 50px;
+}
+.about_us_content {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	background: #a19985;
+	width: 70%;
+	height: 40%;
+	border-radius:15px;
+	background-size: cover;	
+}
+
+#schoolmap {
+	width: 1000px
+}
+
+.linktext {
+	color:#000000;
+	font-size: 1.5em;
+}
+
+
+.container p {
+	font-size: 3.5rem;
+}
+
+.container p span {
+	color:#990000; font-weight:bold
+}
+
+.aboutuscontent{
+	width: 100%;
+}
+
+.about_us_content div{
+	padding: 83px;
+}

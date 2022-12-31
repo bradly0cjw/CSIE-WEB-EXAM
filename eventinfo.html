@@ -1,3 +1,4 @@
+<!-- <!DOCTYPE html> -->
 <html>
 
 <head>
@@ -7,16 +8,15 @@
   <meta name="description" content="This is testpage">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" type="image/x-icon" href="src/img/nttulogo.svg">
-  <link rel="stylesheet" href="src/css/home.css">
+  <link rel="stylesheet" href="src/css/general.css">
   <link rel="stylesheet" href="src/css/footer.css">
-  <link rel="stylesheet" href="src/css/event information.css">
+  <link rel="stylesheet" href="src/css/eventinfo.css">
   <link rel="stylesheet" href="src/css/down.css">
   <link rel="stylesheet" href="src/css/title.css">
-  <script src="src/js/onload.js"></script>
   <script src="src/js/multidetector.js"></script>
   <script src="src/js/dynamic.js"></script>
   <script src="src/js/back2top.js"></script>
-  <!-- <script src="src/js/js.js"></script> -->
+  <script src="src/js/js.js"></script>
   <!-- Google Tag Manager -->
   <script>(function (w, d, s, l, i) {
       w[l] = w[l] || []; w[l].push({
@@ -54,9 +54,9 @@
           <h3>加油!奥利给!!!&nbsp;</h3>
         </div>
       </section>
-      <div style="height: 500%" id="content">
+      <div id="content">
         <!-- change here -->
-        <section style="height: auto">
+        <section class="competition">
           <h2 class="event_title">校園大隊接力</h2>
           <div class="title-content" id="race">
             <div class="content intro">
@@ -75,11 +75,11 @@
             </div>
           </div>
         </section>
-        <section style="height: auto">
-          <h2 class="event_title" style="padding-top: 50px">鐵人三項</h2>
+        <section class="competition">
+          <h2 class="event_title">鐵人三項</h2>
           <div class="title-content" id="ironman">
             <div class="content intro">
-              <h1 style="font-size: 2.5em;">超越極限</h1>
+              <h1>超越極限</h1>
               <p class="introtext">由人文學院出發，跑步至靜心湖游泳橫渡，接著騎車繞行校園一圈，最快抵達體育館為贏家。</p>
             </div>
             <div class="plus" onclick="plus2(this)">
@@ -94,12 +94,11 @@
             </div>
           </div>
         </section>
-        <section style="height: auto">
-          <h2 class="event_title" style="padding-top: 50px">大逃殺</h2>
+        <section class="competition">
+          <h2 class="event_title">大逃殺</h2>
           <div class="title-content" id="watergun">
             <div class="content intro">
-              <h1 style="font-size: 2.5em;"><a class="egg1"
-                  href="https://youtu.be/DJBsvTosozI?t=24">這雖然是遊戲，但可不是鬧著玩的。</a></h1>
+              <h1><a class="egg1" href="https://youtu.be/DJBsvTosozI?t=24">這雖然是遊戲，但可不是鬧著玩的。</a></h1>
               <p class="introtext">透過尋找散落在會場中的水槍，射擊參賽者，若被帶有顏色的水染到參賽者的白色衣服，該名參賽者淘汰。最終生還小隊為贏家。</p>
             </div>
             <div class="plus" onclick="plus3(this)">
@@ -114,12 +113,12 @@
             </div>
           </div>
         </section>
-        <section style="height: auto">
-          <h2 class="event_title" style="padding-top: 50px">全員逃走中</h2>
+        <section class="competition">
+          <h2 class="event_title">全員逃走中</h2>
           <!-- HNDS-028 -->
           <div class="title-content" id="bigthx">
             <div class="content intro">
-              <h1 style="font-size: 2.5em;">你追我，如果你追到我，我就...</h1>
+              <h1>你追我，如果你追到我，我就...</h1>
               <p class="introtext">參賽者分為獵人隊及倖存者隊，如果獵人追到倖存者，倖存者淘汰。在時間內所有倖存者淘汰，獵人隊獲勝。</p>
             </div>
             <div class="plus" onclick="plus4(this)">
@@ -134,11 +133,11 @@
             </div>
           </div>
         </section>
-        <section style="height: auto">
-          <h2 class="event_title" style="padding-top: 50px">Alice</h2>
+        <section class="competition">
+          <h2 class="event_title">Alice</h2>
           <div class="title-content" id="Alice">
             <div class="content intro">
-              <h1 style="font-size: 2.5em;">防人之心不可無</h1>
+              <h1>防人之心不可無</h1>
               <p class="introtext">以二十人為一小隊單位，到各學院闖關，全數關卡通關者，獲得本場遊戲的勝利。過程中，如果有任一關卡失敗，該名玩家淘汰，不得再參加任何關卡。小心，在求生欲下，隊友也可能是敵人。
               </p>
             </div>
@@ -161,33 +160,37 @@
       <button id="btn">TOP</button>
       <div class="menu" id="menu">
         <div class="menulist">
-          <div class="menuspace" id="menutext">
-            <a href="index.html">
+          <div class="menuspace menutext">
+            <a id="text1" href="index.html">
               回到首頁
             </a>
           </div>
-          <div class="menuspace" id="menutext"></div>
-          <a href="main.html">
-            最新消息
-          </a>
-          <div class="menuspace" id="menutext"></div>
-          <a href="Event Information.html">
-            賽事資訊
-          </a>
-          <div class="menuspace" id="menutext"></div>
-          <a href="transport.html">
-            交通資訊
-          </a>
-<!--
-          <div class="menuspace" id="menutext"></div>
-          <a href="transport.html">
+          <div class="menuspace menutext">
+            <a id="text2" href="news.html">
+              最新消息
+            </a>
+          </div>
+          <div class="menuspace menutext">
+            <a id="text3" href="eventinfo.html">
+              賽事資訊
+            </a>
+          </div>
+          <div class="menuspace menutext">
+            <a id="text4" href="transportation.html">
+              交通資訊
+            </a>
+          </div>
+          <!--
+          <div class="menuspace menutext"></div>
+          <a href="transportation.html">
             關於我們
           </a>
 -->
-          <div class="menuspace" id="menutext"></div>
-          <a href="Friends_station.html">
-            友站連結
-          </a>
+          <div class="menuspace menutext">
+            <a id="text5" href="recommendsite.html">
+              友站連結
+            </a>
+          </div>
         </div>
         <div class="menuimage">
           <figure id="menuimage"></figure>
@@ -198,7 +201,7 @@
       <div class="footer-content">
         <ul class="footer-social">
           <li>
-            <a href="#">
+            <a href="youtube.html">
               <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 45 45"
                 style="enable-background:new 0 0 45 45;" xml:space="preserve">
@@ -213,7 +216,7 @@
           </li>
 
           <li>
-            <a href="#">
+            <a href="https://www.nttu.edu.tw/">
               <svg style="margin: 9.5px" width="45" heigh="45" id="_圖層_4" data-name="圖層 4"
                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 227.33 227.33">
                 <g id="_圖層_3" data-name="圖層 3">
@@ -229,7 +232,7 @@
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="facebook.html">
               <svg version="1.1" id="Layer_3" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 45 45"
                 style="enable-background:new 0 0 45 45;" xml:space="preserve">
@@ -241,7 +244,7 @@
           </li>
         </ul>
         <div class="footer-info">
-          <p class="footer-credit">Website design by <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">資工一甲</a>
+          <p class="footer-credit">Website design by <a href="aboutus.html">資工一甲</a>
             <iframe id="fb"
               src="https://www.facebook.com/plugins/like.php?href=http%3A%2F%2Falgo.nttu.edu.tw%2F1111ITWWW%2F11111122&width=90&layout=button_count&action=like&size=small&share=false&height=21&appId"
               width="90" height="21" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
@@ -269,8 +272,43 @@
       </div>
     </nav>
   </div>
-  <script src="src/js/astley.js"></script>
-  <script src="" async defer></script>
+  <script >
+    //         ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣤⣤⣤⣤⣤⣤⣀⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+// ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣤⡾⠛⠉⠁⠀⠀⠀⠀⠈⠉⠉⠉⠛⠷⢶⣤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+// ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡄⣹⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣿⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+// ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⡶⠿⠛⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⢿⣧⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+// ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣾⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+// ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⢿⣿⡀⠀⠀⢀⣤⡶⠖⠛⠛⠛⠷⠶⠶⠶⠶⠾⠶⢶⣦⡄⠀⠀⢸⣷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+// ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡿⠁⠀⣰⡿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢷⡀⠀⢸⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+// ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⡇⠀⢀⡿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣧⠀⢸⡷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+// ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣿⡀⠀⣸⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⠀⢸⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+// ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⣇⢰⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⠀⣸⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+// ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣤⡶⠾⠿⠛⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣿⣿⣿⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+// ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⢿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+// ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣷⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢻⣾⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+// ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣷⣄⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣾⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+// ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⢹⡗⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣃⣿⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+// ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣾⡿⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+// ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣾⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+// ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⡿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⣿⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+// ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣰⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⠻⢦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+// ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣴⣿⣿⣧⣤⣤⣤⣤⣄⠀⠀⠀⠀⠀⠀⠀⠀⣼⢻⡇⠈⠻⠶⣶⣤⣄⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+// ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣤⡶⠿⢿⡟⣿⡟⠀⠀⠀⠀⠹⣿⠀⠀⠀⠀⠀⠀⠀⢠⡿⢸⣇⠀⠀⠀⠀⠀⠉⠉⠻⠿⢶⣦⣤⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+// ⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣴⠾⠛⠉⠀⠀⣾⡇⢸⡇⠀⠀⠀⠀⠀⣿⠀⠀⠀⠀⠀⠀⣰⡿⠁⢸⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠛⠷⠶⣤⣄⣀⠀⠀⠀⠀⠀⠀
+// ⠀⠀⠀⠀⠀⠀⣀⣴⠶⠛⠉⠀⠀⠀⠀⠀⢸⣿⠀⢸⡇⠀⠀⠀⠀⡆⣿⠀⠀⠀⠀⣠⣾⠏⠀⠀⣸⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠛⠷⣦⡀⠀⠀
+// ⠀⠀⢀⣤⡶⠟⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⠀⢸⡇⠀⠀⠀⠀⣿⡟⠀⠀⣀⣴⠟⠁⠀⠀⢠⣿⠑⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢻⡆⠀
+// ⢠⣾⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡿⠀⢸⡇⠀⠀⠀⠀⠸⣿⣴⠾⠋⠀⠀⠀⠀⢠⡿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⡦
+// ⣼⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⣧⠀⣸⣿⣀⣀⣤⣀⣘⣿⣷⣄⠀⠀⠀⢀⣰⢿⣧⠄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣷
+// ⣿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠻⢿⣿⡏⠉⢩⣽⣿⣏⠉⠉⠀⠙⠳⢶⣤⠞⠁⣸⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿
+// ⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⣧⠀⣿⠟⠉⣿⠆⠀⠀⠀⠀⠀⠀⠀⠀⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣴⡿⠿⣷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿
+// ⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⠀⣿⠀⠀⣿⠀⠀⠀⠀⠀⠀⠀⠀⠂⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⣿⣇⠀⠸⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣰⣿
+// ⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⠀⡿⠀⠀⣿⡆⠀⠀⠀⠀⠀⠀⠀⢶⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⠀⠀⢻⡆⠀⠀⣠⣴⣶⣤⠀⠀⢸⡟⠇
+// ⢻⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⢸⡇⠀⠀⣿⡆⠀⠀⠀⠀⠀⠀⠀⢸⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⡇⠀⠘⣷⣠⡾⠋⠀⣽⡟⣷⡀⠘⣷⣤
+// ⠸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⡿⣧⠀⣰⡿⠃⠀⠀⠀⠀⠀⠀⠀⢸⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡇⠀⠀⠙⠟⣥⡶⠟⣻⣿⠟⠧⣴⣿⣧
+// ⠀⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣷⣹⣿⣿⡀⠀⠀⠀⠀⠀⠀⠀⠀⢘⣿⠆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢾⡇⠀⠀⠀⣴⢷⣄⠠⣿⣧⡀⠈⣿⣄⣀
+//  
+
+</script>
 </body>
 
 </html>
