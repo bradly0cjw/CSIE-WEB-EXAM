@@ -219,10 +219,15 @@ body {
     color: #FFFFFF;
     font: small-caps bold 24px/1 sans-serif;
     text-decoration: none;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.menulist a:hover {
+    position: relative;
+    font-size: 48px;
+}
 .menulist {
     display: flex;
+    height: 100%;
     flex-flow: column nowrap;
 }
 

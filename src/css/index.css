@@ -201,9 +201,11 @@ h3 {
     padding: 11.25em 13em 11.5em;
 }
 
-.artworks .directbutton {
+.directbutton {
+    position: relative;
     display: inline-flex;
-    margin-left: 575px;
+    /* margin-left: 575px; */
+    margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
     margin-bottom: 64px;
@@ -214,6 +216,8 @@ h3 {
     border-color: black;
     border-radius: 20px;
     font-size: 3em;
+    align-items: center;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .artworks a:visited {
@@ -226,6 +230,13 @@ h3 {
     text-decoration: none;
 }
 
-.artworks a div:hover {
+.directbutton:hover {
     background: #c3c3c3;
+    font-size: 3.6em;;
+}
+
+.align{
+    display:flex;
+    height: 200px;
+    width:100%;   
 }
