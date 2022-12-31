@@ -50,6 +50,13 @@
 	width: 45px;
 	border-radius: 50px;
 	background-color: rgb(255, 255, 255);
+	transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.plus:hover{
+	filter:invert(1)
+}
+.plus.expand:hover{
+	filter:invert(0)
 }
 .plus.expand{
 	filter:invert(1)

@@ -3,12 +3,12 @@
     position: absolute;
     bottom:20px;
     left:48.5vw;
-    animation-name: showele,down;
-    animation-duration: 8s,1s;
-    animation-direction:normal,alternate;
-    animation-iteration-count:1,infinite;
-    animation-timing-function:cubic-bezier(0, 0, 0.2, 1);
-    filter:drop-shadow(0px 0px 10px black) invert(1) 
+    animation-name: showele,down,bright;
+    animation-duration: 8s,1s,1s;
+    animation-direction:normal,alternate,alternate;
+    animation-iteration-count:1,infinite,infinite;
+    animation-timing-function:cubic-bezier(0, 0, 0.2, 1),cubic-bezier(0, 0, 0.2, 1),ease;
+    filter:drop-shadow(0px 0px 20px rgb(255, 255, 255)) 
 }
 @keyframes down{
     0%{
@@ -16,6 +16,14 @@
     }
     100%{
         bottom:40px
+    }
+}
+@keyframes bright{
+    0%{
+        filter:drop-shadow(0px 0px 20px rgb(255, 255, 255)) invert(0);
+    }
+    100%{
+        filter:drop-shadow(0px 0px 10px rgb(255, 255, 255)) invert(0.3);
     }
 }
 @keyframes showele{
@@ -30,7 +38,7 @@
     }
 }
 .arrowl,.arrowr{
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     border-radius: 50px;
     width: 40px;
     height: 5px;

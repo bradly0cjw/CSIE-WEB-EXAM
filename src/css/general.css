@@ -153,9 +153,9 @@ body {
 
 }
 
-.menutext {
+/* .menutext {
     margin-top: 5%;
-}
+} */
 
 @keyframes fadeInAnimation {
     0% {
@@ -214,7 +214,7 @@ body {
 .menulist a {
     position: relative;
     z-index: 3;
-    top: 50px;
+    /* top: 50px; */
     left: 450px;
     color: #FFFFFF;
     font: small-caps bold 24px/1 sans-serif;
@@ -229,6 +229,7 @@ body {
     display: flex;
     height: 100%;
     flex-flow: column nowrap;
+    justify-content: space-evenly;
 }
 
 #menu.change #menuimage {
