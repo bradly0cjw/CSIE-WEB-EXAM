@@ -14,9 +14,9 @@
         * ~~Temporary remove javascript that control menu display mode~~
 - [x] 2. ~~main min-height and height can't set any percentage only direct number eg 1080px~~
      * Solution use `vh` `vw`
-- [ ] 3. Remember to change light slider image
+- [X] 3. ~~Remember to change light slider image~~(finished)
      *  Remove div blue background
-- [ ] 4. 將選單的三角形補上
+- [ ] 4. ~~將選單的三角形補上~~(canceled)
 # T2 (emergency but not important)
 - [x] 1. ~~add dynamic background~~(finished)
 - [x] 2. ~~Remember to add fav icon (use nttulogo.svg)~~(finished)
