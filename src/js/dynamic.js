@@ -1,27 +1,27 @@
-document.addEventListener("DOMContentLoaded",changebackground())
+document.addEventListener("DOMContentLoaded", changebackground())
 
-function changebackground(){
-    loop=setInterval(function(){
-    var nowtime = new Date().getHours();
-    var hours = parseInt(nowtime)
-    var background = document.getElementById("hero");
-    var menu = document.getElementById("menuimage");
-    var title = document.getElementById("title");
-    if(background!=null){
-        classlist(background,hours)
-        clearInterval(loop)
-    }
-    if(menu!=null){
-        style(menu,hours)
-        clearInterval(loop)
-    }
-    if(title!=null){
-        style(title,hours)
-        clearInterval(loop)
-    }
-    },1)
+function changebackground() {
+    loop = setInterval(function () {
+        var nowtime = new Date().getHours();
+        var hours = parseInt(nowtime)
+        var background = document.getElementById("hero");
+        var menu = document.getElementById("menuimage");
+        var title = document.getElementById("title");
+        if (background != null) {
+            classlist(background, hours)
+            clearInterval(loop)
+        }
+        if (menu != null) {
+            style(menu, hours)
+            clearInterval(loop)
+        }
+        if (title != null) {
+            style(title, hours)
+            clearInterval(loop)
+        }
+    }, 1)
 }
-function classlist(x,hours){
+function classlist(x, hours) {
     if (hours >= 6 && hours < 16) {
         x.classList.remove("loading")
         x.classList.add("day");
@@ -39,12 +39,12 @@ function classlist(x,hours){
         x.classList.add("night");
     }
 }
-function style(x,hours){
+function style(x, hours) {
     if (hours >= 6 && hours < 16) {
-        x.style.backgroundImage="url(src/img/Day.jpg)";
+        x.style.backgroundImage = "url(src/img/Day.jpg)";
     } else if (hours >= 16 && hours < 19) {
-        x.style.backgroundImage="url(src/img/Evening.jpg)";
+        x.style.backgroundImage = "url(src/img/Evening.jpg)";
     } else if (hours < 6 || hours >= 19) {
-        x.style.backgroundImage="url(src/img/Night.jpg)";
+        x.style.backgroundImage = "url(src/img/Night.jpg)";
     }
 }

@@ -10,9 +10,9 @@
 }
 
 .countdown-label {
-  position:relative;
+  position: relative;
   /* top:30px; */
-  right:3px;
+  right: 3px;
   font-size: 3em;
   text-align: center;
 }
@@ -22,6 +22,6 @@
 #countdown-minute,
 #countdown-second {
   text-align: center;
-  width:120px;
+  width: 120px;
   font-size: 6em;
 }

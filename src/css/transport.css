@@ -39,13 +39,15 @@ td {
     width: 80%;
     margin: auto
 }
-.method table td div{
+
+.method table td div {
     align-content: center;
     text-decoration-line: underline;
     cursor: pointer;
 }
-.transporticon:hover{
-    filter:invert(1)
+
+.transporticon:hover {
+    filter: invert(1)
 }
 
 h3 strong span {
