@@ -26,3 +26,20 @@
 p {
 	
 }
+
+
+.container p {
+	font-size: 3.5rem;
+}
+
+.container p span {
+	color:#990000; font-weight:bold
+}
+
+.aboutuscontent{
+	width: 100%;
+}
+
+.about_us_content div{
+	padding: 100px;
+}

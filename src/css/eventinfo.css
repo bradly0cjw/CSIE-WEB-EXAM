@@ -149,3 +149,14 @@ p {
 #content{
 	height: 500%;;
 }
+#content section {
+	height: auto
+}
+
+.event_title {
+	padding-top: 50px
+}
+
+section div div h1 {
+	font-size: 2.5em;
+}
