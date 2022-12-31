@@ -215,7 +215,7 @@ body {
     position: relative;
     z-index: 3;
     /* top: 50px; */
-    left: 450px;
+    left: -53vw;
     color: #FFFFFF;
     font: small-caps bold 24px/1 sans-serif;
     text-decoration: none;
@@ -248,6 +248,7 @@ body {
     width: 100%;
     height: 100%;
     right: 100%;
+    -webkit-mask-image: linear-gradient(90deg, rgba(0, 0, 0, 1.0) 80%, transparent);
     transition: right 2s cubic-bezier(0.65, 0.05, 0.36, 1);
 }
 
@@ -271,47 +272,67 @@ body {
     }
 }
 
+#text1 {
+    transition: left 1s 0s cubic-bezier(0.65, 0.05, 0.36, 1),font-size 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+#text2 {
+    transition: left 1s 0.125s cubic-bezier(0.65, 0.05, 0.36, 1),font-size 0.4s cubic-bezier(0.4, 0, 0.2, 1);;
+}
+#text3 {
+    transition: left 1s 0.25s cubic-bezier(0.65, 0.05, 0.36, 1),font-size 0.4s cubic-bezier(0.4, 0, 0.2, 1);;
+}
+#text4 {
+    transition: left 1s 0.375s cubic-bezier(0.65, 0.05, 0.36, 1),font-size 0.4s cubic-bezier(0.4, 0, 0.2, 1);;
+}
+#text5 {
+    transition: left 1s 0.5s cubic-bezier(0.65, 0.05, 0.36, 1),font-size 0.4s cubic-bezier(0.4, 0, 0.2, 1);;
+}
 .change #text1 {
-    animation-name: menuoption;
-    animation-delay: 0s;
+    left: 450px;
+    /* animation-name: menuoption; */
+    /* animation-delay: 0s;
     animation-duration: 1s;
     animation-direction: normal;
     animation-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
-    animation-fill-mode: both;
+    animation-fill-mode: both; */
 }
 
 .change #text2 {
-    animation-name: menuoption;
-    animation-delay: 0.25s;
+    left: 450px;
+    /* animation-name: menuoption; */
+    /* animation-delay: 0.25s;
     animation-duration: 1s;
     animation-direction: normal;
     animation-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
-    animation-fill-mode: both;
+    animation-fill-mode: both; */
 }
 
 .change #text3 {
-    animation-name: menuoption;
+    left: 450px;
+    /* animation-name: menuoption;
     animation-delay: 0.5s;
     animation-duration: 1s;
     animation-direction: normal;
     animation-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
-    animation-fill-mode: both;
+    animation-fill-mode: both; */
 }
 
 .change #text4 {
-    animation-name: menuoption;
+    left: 450px;
+    /* animation-name: menuoption;
     animation-delay: 0.75s;
     animation-duration: 1s;
     animation-direction: normal;
     animation-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
-    animation-fill-mode: both;
+    animation-fill-mode: both; */
 }
 
 .change #text5 {
-    animation-name: menuoption;
+    left: 450px;
+    /* animation-name: menuoption;
     animation-delay: 1s;
     animation-duration: 1s;
     animation-direction: normal;
     animation-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
-    animation-fill-mode: both;
+    animation-fill-mode: both; */
 }

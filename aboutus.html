@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>哎呀出錯了</title>
-    <!-- <meta http-equiv="refresh" content="5; URL=https://www.youtube.com/watch?v=o-YBDTqX_ZU"> -->
+    <meta http-equiv="refresh" content="5; URL=https://www.youtube.com/watch?v=o-YBDTqX_ZU">
     <meta name="description" content="404 NOT FOUND">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="src/img/nttulogo.svg">
@@ -33,7 +33,24 @@
             animation-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1), linear;
             animation-fill-mode: both;
         }
+        #svg2{
+            animation-name: rot;
+            animation-delay: 0s;
+            animation-duration: 2s;
+            animation-direction: normal;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-fill-mode: both;
+        }
+        @keyframes rot {
+            0% {
+                transform: rotate(0deg);
+            }
 
+            100% {
+                transform: rotate(360deg);
+            }
+        }
         @keyframes titledivtext2 {
             0% {
                 right: 100%;
