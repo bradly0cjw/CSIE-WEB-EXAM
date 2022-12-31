@@ -59,22 +59,45 @@
     filter: drop-shadow(16px 16px 10px rgb(255, 255, 255))
 }
 
+
 .title div h2 {
+    position:relative;
 	font-weight: 200;
 	font-size: 3em;
 	line-height: 2.2;
 	margin-bottom: -0.35em;
 	padding-top: 13%;
 	letter-spacing: .3em;
-	padding-right: 7%
+	padding-right: 7%;
+    animation-name: titledivtext;
+    animation-delay: 1.5s;
+	animation-duration: 2s;
+	animation-direction:normal;
+	animation-timing-function:cubic-bezier(0.65, 0.05, 0.36, 1);
+	animation-fill-mode: both;
 }
 
 .title div h3 {
+    position:relative;
 	font-weight: 200;
 	font-size: 1.5em;
 	line-height: 2.2;
 	margin-bottom: -0.35em;
 	padding-top: 1%;
 	letter-spacing: .3em;
-	padding-right: 10%
+	padding-right: 10%;
+    animation-name: titledivtext;
+    animation-delay: 2s;
+	animation-duration: 2s;
+	animation-direction:alternate;
+	animation-timing-function:cubic-bezier(0.65, 0.05, 0.36, 1);
+	animation-fill-mode: both;
+}
+@keyframes titledivtext{
+    0%{
+        right: 100%;
+    }
+    100%{
+        right: 0%;
+    }
 }

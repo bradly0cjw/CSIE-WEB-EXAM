@@ -24,11 +24,12 @@ section {
 
 
 .main-img {
-    background-color: aqua;
+    background-color: #a0957e;
     margin: 5em;
+    margin-top: 2em;
     margin-left: 10em;
     width: 30%;
-    border: 3px solid green;
+    border: 3px solid #595449;
     padding: 10px;
 }
 
@@ -49,7 +50,7 @@ section {
 .celebrate p {
     font-size: 1.7rem;
     line-height: 3.5rem;
-    border: 1px solid #006699;
+    border: 1px solid #595449;
     padding: 50px;
 }
 

@@ -1,0 +1,183 @@
+/*!
+ * js-scroll-effect-module JavaScript Library v0.6.0
+ * https://github.com/yama-dev/js-scroll-effect-module
+ * Copyright yama-dev
+ * Licensed under the MIT license.
+ */
+/*!
+ * Setings
+ * -> Set Easing
+ *   "easeOutQuart"
+ *     cubic-bezier(0.165, 0.84, 0.44, 1);
+ *   "easeInOutCubic"
+ *     cubic-bezier(0.645, 0.045, 0.355, 1);
+ *   "easeInOutBack"
+ *     cubic-bezier(0.68, -0.55, 0.265, 1.55);
+ * -> Set Duration
+ * -> Set Delay
+ */
+/*!
+ * Set Effects
+ * -> js-scroll__fadein-basic
+ * -> js-scroll__fadein-top
+ * -> js-scroll__fadein-bottom
+ * -> js-scroll__fadein-left
+ * -> js-scroll__fadein-right
+ * -> js-scroll__fadein-zoomin
+ * -> js-scroll__spinin
+ */
+ .js-scroll__fadein-basic {
+    opacity: 0;
+    -webkit-transition: opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+    transition: opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+  }
+  
+  .js-scroll__fadein-basic.is-active {
+    opacity: 1;
+    -webkit-transition: opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+    transition: opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+  }
+  
+  .js-scroll__fadein-zoomin {
+    opacity: 0;
+    -webkit-transform: scale(0.99);
+            transform: scale(0.99);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    -webkit-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+    transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+  }
+  
+  .js-scroll__fadein-zoomin.is-active {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    -webkit-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+    transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+  }
+  
+  .js-scroll__fadein-top {
+    opacity: 0;
+    -webkit-transform: translate(0, -30px);
+            transform: translate(0, -30px);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    -webkit-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+    transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+  }
+  
+  .js-scroll__fadein-top.is-active {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    -webkit-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+    transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+  }
+  
+  .js-scroll__fadein-bottom {
+    opacity: 0;
+    -webkit-transform: translate(0, 30px);
+            transform: translate(0, 30px);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    -webkit-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+    transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+  }
+  
+  .js-scroll__fadein-bottom.is-active {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    -webkit-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+    transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+  }
+  
+  .js-scroll__fadein-left {
+    opacity: 0;
+    -webkit-transform: translate(-80%, 0);
+            transform: translate(-80%, 0);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    -webkit-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+    transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+  }
+  
+  .js-scroll__fadein-left.is-active {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    -webkit-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+    transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+  }
+  
+  .js-scroll__fadein-right {
+    opacity: 0;
+    -webkit-transform: translate(80%, 0);
+            transform: translate(80%, 0);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    -webkit-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+    transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+  }
+  
+  .js-scroll__fadein-right.is-active {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    -webkit-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+    transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+  }
+  
+  .js-scroll__spinin {
+    opacity: 0;
+    -webkit-transform: translate(0, 0) rotate3d(1, 0, 1, -720deg);
+            transform: translate(0, 0) rotate3d(1, 0, 1, -720deg);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    -webkit-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+    transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+  }
+  
+  .js-scroll__spinin.is-active {
+    opacity: 1;
+    -webkit-transform: translate(0, 0) rotate3d(1, 0, 1, 0);
+            transform: translate(0, 0) rotate3d(1, 0, 1, 0);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    -webkit-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+    transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+  }
