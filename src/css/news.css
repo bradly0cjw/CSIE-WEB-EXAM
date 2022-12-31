@@ -42,18 +42,23 @@ section {
     height: 300px;
 }
 
-#content{
+#content {
     height: 100%;
 }
-.container p {
-	font-size: 1.7rem;line-height: 3.5rem;border: 1px solid #006699;padding: 50px;
+
+.celebrate p {
+    font-size: 1.7rem;
+    line-height: 3.5rem;
+    border: 1px solid #006699;
+    padding: 50px;
 }
 
-.container p span {
-	color:#990000; font-weight:bold
-	
+.celebrate p span {
+    color: #990000;
+    font-weight: bold
 }
 
-.container div {
-	padding-top: 30p; display: flex;
+.news {
+    /* padding-top: 30px; */
+    display: flex;
 }
