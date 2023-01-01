@@ -6,11 +6,17 @@
     height: 80px;
     bottom: 20px;
     left: 48.5vw;
-    animation-name: showele, down, bright;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    animation-name: showele, down;
     animation-duration: 8s, 1s, 1s;
-    animation-direction: normal, alternate, alternate;
-    animation-iteration-count: 1, infinite, infinite;
-    animation-timing-function: cubic-bezier(0, 0, 0.2, 1), cubic-bezier(0, 0, 0.2, 1), ease;
+    animation-direction: normal, alternate;
+    animation-iteration-count: 1, infinite;
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1), cubic-bezier(0, 0, 0.2, 1);
+}
+
+.down:hover {
+    /* background-color: aqua; */
+    filter: invert(0.7);
 }
 
 @keyframes down {
@@ -53,6 +59,11 @@
     border-radius: 50px;
     width: 40px;
     height: 5px;
+    animation-name: bright;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
 }
 
 .arrowl {
@@ -70,9 +81,11 @@
 #arr1 {
     bottom: -61px
 }
+
 #arr2 {
     bottom: -55px
 }
+
 #arr3 {
     bottom: -31px
 }
