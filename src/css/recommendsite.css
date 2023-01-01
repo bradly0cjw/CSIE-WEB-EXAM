@@ -25,8 +25,13 @@ main {
 .linktext {
 	color: #000000;
 	font-size: 1.5em;
+	transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 
+.linktext:hover {
+	filter:invert(1);
+	font-size: 3em;
+}
 
 .container p {
 	font-size: 3.5rem;
@@ -42,5 +47,8 @@ main {
 }
 
 .about_us_content div {
-	padding: 83px;
+	display: flex;
+	height: 100%;
+	flex-direction: column;
+	justify-content: space-evenly;
 }
