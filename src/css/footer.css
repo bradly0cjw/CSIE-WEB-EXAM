@@ -68,9 +68,39 @@ footer {
     width: auto;
     height: 1em;
 }
-#fb{
+
+#fb {
     margin-bottom: -4px;
 }
-.footer-credit a{
-    color:#fff
+
+.footer-credit a {
+    color: #fff
+}
+
+#svg2 {
+    margin: 12px;
+    width: 40px;
+    height: 40px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#svg3,
+#svg1 {
+    margin: 9.5px;
+    width: 45px;
+    height: 45px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#svg2:hover {
+    width: 56px;
+    height: 56px;
+    margin: 4px;
+}
+
+#svg1:hover,
+#svg3:hover {
+    width: 64px;
+    height: 64px;
+    margin: 0px;
 }

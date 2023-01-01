@@ -1,10 +1,12 @@
 /* CSS Document */
-#content{
+#content {
 	height: auto
 }
-main{
+
+main {
 	padding-bottom: 50px;
 }
+
 .about_us_content {
 	position: relative;
 	margin-left: auto;
@@ -12,8 +14,8 @@ main{
 	background: #a19985;
 	width: 70%;
 	height: 40%;
-	border-radius:15px;
-	background-size: cover;	
+	border-radius: 15px;
+	background-size: cover;
 }
 
 #schoolmap {
@@ -21,7 +23,7 @@ main{
 }
 
 .linktext {
-	color:#000000;
+	color: #000000;
 	font-size: 1.5em;
 }
 
@@ -31,13 +33,14 @@ main{
 }
 
 .container p span {
-	color:#990000; font-weight:bold
+	color: #990000;
+	font-weight: bold
 }
 
-.aboutuscontent{
+.aboutuscontent {
 	width: 100%;
 }
 
-.about_us_content div{
+.about_us_content div {
 	padding: 83px;
 }

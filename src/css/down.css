@@ -1,60 +1,103 @@
-.down{
+.down {
     z-index: 99;
+    cursor: pointer;
     position: absolute;
-    bottom:20px;
-    left:48.5vw;
-    animation-name: showele,down;
-    animation-duration: 8s,1s;
-    animation-direction:normal,alternate;
-    animation-iteration-count:1,infinite;
-    animation-timing-function:cubic-bezier(0, 0, 0.2, 1);
-    filter:drop-shadow(0px 0px 10px black) invert(1) 
+    width: 60px;
+    height: 80px;
+    bottom: 20px;
+    left: 48.5vw;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    animation-name: showele, down;
+    animation-duration: 8s, 1s, 1s;
+    animation-direction: normal, alternate;
+    animation-iteration-count: 1, infinite;
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1), cubic-bezier(0, 0, 0.2, 1);
 }
-@keyframes down{
-    0%{
-        bottom:20px
-    }
-    100%{
-        bottom:40px
-    }
+
+.down:hover {
+    /* background-color: aqua; */
+    filter: invert(0.7);
 }
-@keyframes showele{
-    0%{
-        opacity:0
+
+@keyframes down {
+    0% {
+        bottom: 20px
     }
-    50%{
-        opacity:0
-    }
-    100%{
-        opacity:1
+
+    100% {
+        bottom: 40px
     }
 }
-.arrowl,.arrowr{
-    background-color: black;
+
+@keyframes bright {
+    0% {
+        filter: drop-shadow(0px 0px 20px white) invert(0);
+    }
+
+    100% {
+        filter: drop-shadow(0px 0px 10px white) invert(0.3);
+    }
+}
+
+@keyframes showele {
+    0% {
+        opacity: 0
+    }
+
+    50% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+.arrowl,
+.arrowr {
+    background-color: rgb(255, 255, 255);
     border-radius: 50px;
     width: 40px;
     height: 5px;
+    animation-name: bright;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
 }
-.arrowl{
+
+.arrowl {
     position: relative;
     rotate: 45deg;
-    left: -21px;
+    left: -2px;
 }
-.arrowr{
+
+.arrowr {
     position: relative;
     rotate: -45deg;
-    left: 4px;
-    bottom: 5px;
+    left: 24px;
 }
-#arr3{
-    bottom:30px
+
+#arr1 {
+    bottom: -61px
 }
-#arr4{
-    bottom:35px
+
+#arr2 {
+    bottom: -55px
 }
-#arr5{
-    bottom:60px
+
+#arr3 {
+    bottom: -31px
 }
-#arr6{
-    bottom:65px
+
+#arr4 {
+    bottom: -25px
+}
+
+#arr5 {
+    bottom: -1px
+}
+
+#arr6 {
+    bottom: 5px
 }

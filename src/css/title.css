@@ -6,44 +6,49 @@
 	height: 100vh;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-color:#bbad90;
+	background-color: #bbad90;
 	/* background-image: url("../img/Day.jpg"); */
 	opacity: 0.9;
 }
-.title::after{
+
+.title::after {
 	position: absolute;
-	top:0;
-	right:0;
-	bottom:0;
-	width:100%;
-	height:100vh;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100vh;
 	/* background-color: white; */
 	content: "";
 	animation-name: title;
 	animation-duration: 2s;
-	animation-direction:normal;
-	animation-timing-function:cubic-bezier(0.65, 0.05, 0.36, 1);
+	animation-direction: normal;
+	animation-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
 	animation-fill-mode: both;
-	backdrop-filter:blur(10px);
-    background-color: rgba(0, 0, 0, 0.562);
+	backdrop-filter: blur(10px);
+	background-color: rgba(0, 0, 0, 0.562);
 }
 
-@keyframes title{
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 100%;
-    }
+@keyframes title {
+	0% {
+		width: 0%;
+	}
+
+	100% {
+		width: 100%;
+	}
 }
-@keyframes titlediv{
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 90%;
-    }
+
+@keyframes titlediv {
+	0% {
+		width: 0%;
+	}
+
+	100% {
+		width: 90%;
+	}
 }
+
 .title div {
 	z-index: 2;
 	font-family: 'acumin-pro-extra-condensed', sans-serif;
@@ -52,16 +57,15 @@
 	padding-top: 4em;
 	padding-right: 183px;
 	top: 0;
-    right:0;
+	right: 0;
 	bottom: 0;
 	width: 90%;
 	text-align: right;
-    filter: drop-shadow(16px 16px 10px rgb(255, 255, 255))
 }
 
 
 .title div h2 {
-    position:relative;
+	position: relative;
 	font-weight: 200;
 	font-size: 3em;
 	line-height: 2.2;
@@ -69,16 +73,17 @@
 	padding-top: 13%;
 	letter-spacing: .3em;
 	padding-right: 7%;
-    animation-name: titledivtext;
-    animation-delay: 1.5s;
+	animation-name: titledivtext;
+	animation-delay: 1.5s;
 	animation-duration: 2s;
-	animation-direction:normal;
-	animation-timing-function:cubic-bezier(0.65, 0.05, 0.36, 1);
+	animation-direction: normal;
+	animation-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
 	animation-fill-mode: both;
+	filter: drop-shadow(16px 16px 10px)
 }
 
 .title div h3 {
-    position:relative;
+	position: relative;
 	font-weight: 200;
 	font-size: 1.5em;
 	line-height: 2.2;
@@ -86,18 +91,21 @@
 	padding-top: 1%;
 	letter-spacing: .3em;
 	padding-right: 10%;
-    animation-name: titledivtext;
-    animation-delay: 2s;
+	animation-name: titledivtext;
+	animation-delay: 2s;
 	animation-duration: 2s;
-	animation-direction:alternate;
-	animation-timing-function:cubic-bezier(0.65, 0.05, 0.36, 1);
+	animation-direction: alternate;
+	animation-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
 	animation-fill-mode: both;
+	filter: drop-shadow(16px 16px 10px)
 }
-@keyframes titledivtext{
-    0%{
-        right: 100%;
-    }
-    100%{
-        right: 0%;
-    }
+
+@keyframes titledivtext {
+	0% {
+		right: 100%;
+	}
+
+	100% {
+		right: 0%;
+	}
 }

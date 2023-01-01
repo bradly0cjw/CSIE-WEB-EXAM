@@ -8,7 +8,7 @@
 - [X] 5. ~~Animation~~(finished)
 - [X] 6. ~~Dynamic competition introduction~~(finished)
 # T1 (important but not emergency)
-- [x] 1. ~~hambuger menu need fix when css modified~~
+- [X] 1. ~~hambuger menu need fix when css modified~~
      * Move menu css to the top of the file
      * ~~Issue disappear when using flex~~
         * ~~Temporary remove javascript that control menu display mode~~
@@ -21,7 +21,7 @@
 - [x] 1. ~~add dynamic background~~(finished)
 - [x] 2. ~~Remember to add fav icon (use nttulogo.svg)~~(finished)
 # T3 (not important and not emergency)
-- [x] 1. Fix blank page when reload
+- [X] 1. Fix blank page when reload
      * temporary ***NOT*** fixed
 - [x] 2. ~~Embed adblock detector~~(finished)
      * ~~see [Stack overflow](https://stackoverflow.com/questions/4869154/how-to-detect-adblock-on-my-website)~~
