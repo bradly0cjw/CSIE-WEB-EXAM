@@ -1,6 +1,9 @@
 .down {
     z-index: 99;
+    cursor: pointer;
     position: absolute;
+    width: 60px;
+    height: 80px;
     bottom: 20px;
     left: 48.5vw;
     animation-name: showele, down, bright;
@@ -55,28 +58,33 @@
 .arrowl {
     position: relative;
     rotate: 45deg;
-    left: -21px;
+    left: -2px;
 }
 
 .arrowr {
     position: relative;
     rotate: -45deg;
-    left: 4px;
-    bottom: 5px;
+    left: 24px;
 }
 
+#arr1 {
+    bottom: -61px
+}
+#arr2 {
+    bottom: -55px
+}
 #arr3 {
-    bottom: 30px
+    bottom: -31px
 }
 
 #arr4 {
-    bottom: 35px
+    bottom: -25px
 }
 
 #arr5 {
-    bottom: 60px
+    bottom: -1px
 }
 
 #arr6 {
-    bottom: 65px
+    bottom: 5px
 }
