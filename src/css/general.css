@@ -91,7 +91,7 @@ body {
     height: 72px;
     width: 72px;
     bottom: -80px;
-    left: 9.5px;
+    right: 77.5px;
     z-index: 99;
     font-size: 18px;
     border: none;
@@ -103,7 +103,7 @@ body {
     padding: 15px;
     border-radius: 100%;
     transition:
-        bottom 0.5s ease
+        all 0.5s ease
 }
 
 #btn.show {
@@ -112,6 +112,7 @@ body {
 
 #btn:hover {
     background-color: #302c23;
+    filter: invert(1) brightness(2) ;
 }
 
 .menu {
@@ -249,7 +250,7 @@ body {
     height: 100%;
     right: 100%;
     -webkit-mask-image: linear-gradient(90deg, rgba(0, 0, 0, 1.0) 80%, transparent);
-    transition: right 2s cubic-bezier(0.65, 0.05, 0.36, 1);
+    transition: right 1s cubic-bezier(0.65, 0.05, 0.36, 1);
 }
 
 .container {
@@ -276,16 +277,16 @@ body {
     transition: left 1s 0s cubic-bezier(0.65, 0.05, 0.36, 1),font-size 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 #text2 {
-    transition: left 1s 0.125s cubic-bezier(0.65, 0.05, 0.36, 1),font-size 0.4s cubic-bezier(0.4, 0, 0.2, 1);;
+    transition: left 1s 0.0625s cubic-bezier(0.65, 0.05, 0.36, 1),font-size 0.4s cubic-bezier(0.4, 0, 0.2, 1);;
 }
 #text3 {
-    transition: left 1s 0.25s cubic-bezier(0.65, 0.05, 0.36, 1),font-size 0.4s cubic-bezier(0.4, 0, 0.2, 1);;
+    transition: left 1s 0.125s cubic-bezier(0.65, 0.05, 0.36, 1),font-size 0.4s cubic-bezier(0.4, 0, 0.2, 1);;
 }
 #text4 {
-    transition: left 1s 0.375s cubic-bezier(0.65, 0.05, 0.36, 1),font-size 0.4s cubic-bezier(0.4, 0, 0.2, 1);;
+    transition: left 1s 0.1875s cubic-bezier(0.65, 0.05, 0.36, 1),font-size 0.4s cubic-bezier(0.4, 0, 0.2, 1);;
 }
 #text5 {
-    transition: left 1s 0.5s cubic-bezier(0.65, 0.05, 0.36, 1),font-size 0.4s cubic-bezier(0.4, 0, 0.2, 1);;
+    transition: left 1s 0.25s cubic-bezier(0.65, 0.05, 0.36, 1),font-size 0.4s cubic-bezier(0.4, 0, 0.2, 1);;
 }
 .change #text1 {
     left: 450px;
